@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYMES - Solicitud de crédito</title>
+
+    <!-- icon -->
+    <link rel="apple-touch-icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.png"/>
+	<link rel="icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.png"/>
+	<link rel="icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.ico"/>
+
+    <!-- imoprt styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="css/fuenteAvenir.css">
+    <link rel="stylesheet" href="css/style-cfn.css">
+
+    <!-- javascript sergiobravo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js" defer></script>
+
+</head>
+<body class="position-relative">
+    <div class="w-100 " style="background-color: #001C4F;height: 90px;">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 text-white">
+                    <div class="w-100 d-flex align-items-center">
+                        <div class="logoB  mt-3"><img src="img/logoW.svg" alt="cfn"></div>
+                        <div class="logoB ml-auto mt-3"><img src="img/escudo-pais.png" alt="cfn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="logoSolicitud">
+                <h1 class="m-0 text-white d-flex align-items-center h3"><i class="fa fa-user"></i><span class="ml-2">Solicitudes<br> de Crédito</span></h1>
+            </div>
+            <div class="usuario ml-auto">
+                <div class="nombre">
+                    <h2 class="m-0 text-white d-flex align-items-center h3"><i class="fa fa-users"></i><span class="ml-2">Bienvenido(a) Ana Moreira</span></h1>
+                </div>
+                <div class="detalle text-white">
+                    <span>Tipo de crédito: PYMES</span> | <span>No. trámite: RDRT1989</span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <nav class="col-sm-12 bg-white rounded-top">
+                <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-solicitud-tab" data-toggle="tab" href="#nav-solicitud" role="tab" aria-controls="nav-home" aria-selected="true">Datos de solicitud</a>
+                    <a class="nav-item nav-link" id="nav-deudor-tab" data-toggle="tab" href="#nav-deudor" role="tab" aria-controls="nav-profile" aria-selected="false">Datos de deudor</a>
+                    <a class="nav-item nav-link" id="nav-garante-tab" data-toggle="tab" href="#nav-garante" role="tab" aria-controls="nav-contact" aria-selected="false">Datos de garante</a>
+                    <a class="nav-item nav-link" id="nav-confirmacion-tab" data-toggle="tab" href="#nav-confirmacion" role="tab" aria-controls="nav-contact" aria-selected="false">Confirmación</a>
+                    <a class="nav-item nav-link" id="nav-impresion-tab" data-toggle="tab" href="#nav-impresion" role="tab" aria-controls="nav-contact" aria-selected="false">Impresión</a>
+                </div>
+            </nav>
+            <div class="bg-white tab-content col-sm-12" id="myTabContent">
+                <div class=" tab-pane fade show active" id="nav-solicitud" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="mt-4 c-secundary-cfn mb-0 text-uppercase">Datos del deudor</h3>
+                    <hr class="mt-0">
+                    <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Nombre completo">
+                    <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Cédula">
+                    
+                    <h3 class="mt-4 c-secundary-cfn mb-0 text-uppercase">Datos financieros</h3>
+                    <hr class="mt-0">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="Escriba">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="Monto">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="plazo de días">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="forma de pagos">
+                                <option value="valor1" disabled>forma de pago</option>
+                                <option value="valor2">Valor2</option>
+                                <option value="valor3">Valor3</option>
+                                <option value="valor4">Valor4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <textarea class="d-block w-100 rounded border p-3" name="" id="" cols="30" rows="5" placeholder="Descripción"></textarea>
+                    
+                    <div id="detalle-inversion-gastos">
+                        <div class="d-flex">
+                            <h3 class="mt-4 c-secundary-cfn mb-0 text-uppercase d-inline">Detalle de inversión de gastos</h3> <div id="anadirDIG" class="mt-4 d-inline ml-auto ">Añadir <i class="text-danger fa fa-plus-circle"></i></div>
+                        </div>    
+                        <hr class="mt-0">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Escribir">
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Monto">
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Aporte">
+                            </div>
+                        </div>
+                        <textarea class="d-block w-100 rounded border p-3" name="" id="" cols="30" rows="5" placeholder="Descripción"></textarea>
+                        <div id="anadiendoDIG"></div>
+                    </div>
+                    
+                    <div id="recursos-humanos">
+                        <div class="d-flex">
+                            <h3 class="mt-4 c-secundary-cfn mb-0 text-uppercase d-inline">Recursos humanos</h3> <div id="anadirRH" class="mt-4 d-inline ml-auto ">Añadir <i class="text-danger fa fa-plus-circle"></i></div>
+                        </div>    
+                        <hr class="mt-0">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="tipo de vinculación">
+                                    <option value="valor1" disabled>Tipo de vinculacion</option>
+                                    <option value="valor2">Valor2</option>
+                                    <option value="valor3">Valor3</option>
+                                    <option value="valor4">Valor4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Empleo">
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="N. Empleados después de desembolso CFN">
+                            </div>
+                        </div>
+                        <textarea class="d-block w-100 rounded border p-3 " name="" id="" cols="30" rows="5" placeholder="Detalle de empleados generados por cada desembolso"></textarea>
+                        
+                        <div id="anadiendoRH" class="h-auto d-block"></div>
+                    </div>
+
+                    <div id="datos-garantia">
+                        <div class="d-flex">
+                            <h3 class="mt-4 c-secundary-cfn mb-0 text-uppercase d-inline">Datos de garantía</h3> <div id="anadirDG" class="mt-4 d-inline ml-auto ">Añadir <i class="text-danger fa fa-plus-circle"></i></div>
+                        </div>    
+                        <hr class="mt-0">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="tipo de vinculación">
+                                    <option value="valor1">Tipo de garantía</option>
+                                    <option value="valor2">Valor2</option>
+                                    <option value="valor3">Valor3</option>
+                                    <option value="valor4">Valor4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="tipo de vinculación">
+                                    <option value="valor1">Asegurada</option>
+                                    <option value="valor2">Valor2</option>
+                                    <option value="valor3">Valor3</option>
+                                    <option value="valor4">Valor4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="tipo de vinculación">
+                                    <option value="valor1">Propio</option>
+                                    <option value="valor2">Valor2</option>
+                                    <option value="valor3">Valor3</option>
+                                    <option value="valor4">Valor4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Valor realización/Oportunidad">
+                        <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Descripción">
+                        <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Ubicación">
+                        <div id="anadiendoDG" class="h-auto d-block"></div>
+                    </div>
+                    <div class="w-100" style="height: 50px;"></div>
+                    <div class="row mb-2 text-center d-flex justify-content-center align-items-center">
+                        <a href="#" class="pl-1 pr-1 pb-2 pt-2 w-25 text-center  bg-primary-cfn text-white ">DECLARACIÓN</a> <span class="ml-2 bg-primary-cfn rounded-circle d-flex justify-content-center align-items-center" style="width: 30px;height:30px;"><i class="fa fa-file text-white" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="row mb-2 d-flex justify-content-center">
+                        <a href="#" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white mr-2">Guardar</a>
+                        <a href="#" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white ml-2">Continuar</a>
+                    </div>
+                    <div class="w-100" style="height: 100px;"></div>
+                </div>
+                <div class="  tab-pane fade" id="nav-deudor" role="tabpanel" aria-labelledby="profile-tab">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                </div>
+                <div class=" tab-pane fade" id="nav-garante" role="tabpanel" aria-labelledby="contact-tab">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                </div>
+                <div class=" tab-pane fade" id="nav-confirmacion" role="tabpanel" aria-labelledby="contact-tab">
+                    texto 1
+                </div>
+                <div class="tab-pane fade" id="nav-impresion" role="tabpanel" aria-labelledby="contact-tab">
+                    tecto
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center bg-alternativo p-2 mt-5"> <!-- iconos del footer -->
+		<div class="container">
+			<p class="sinEspaciosUpDown text-center mb-0 ">SOPORTA NAVEGADORES</p>
+			<p class="sinEspaciosUpDown text-center mb-0 ">
+				Versión mínima 40.0 <i class="fab fa-firefox"></i> | Versión mínima 45.0 <i class="fab fa-chrome"></i> | Versión mínima 40.0 <i class="fab fa-internet-explorer" ></i> |
+				Versión mínima 11.0 <i class="fab fa-safari" ></i> ó Superiores
+			</p>
+		</div>
+    </footer>
+</body>
+</html>

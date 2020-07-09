@@ -1,0 +1,9 @@
+https://getbootstrap.com/docs/4.5/utilities/sizing/#relative-to-the-parent
+https://getbootstrap.com/docs/4.5/utilities/text/#text-decoration
+https://getbootstrap.com/docs/4.5/utilities/colors/#color
+https://getbootstrap.com/docs/4.5/content/typography/
+https://getbootstrap.com/docs/4.5/utilities/shadows/
+https://getbootstrap.com/docs/4.5/utilities/text/#text-transform
+https://getbootstrap.com/docs/4.5/utilities/position/
+https://getbootstrap.com/docs/4.5/utilities/borders/
+https://getbootstrap.com/docs/4.5/utilities/borders/#border-color 

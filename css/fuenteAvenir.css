@@ -1,0 +1,78 @@
+/*================================================
+    Tipograf�a Gruesa
+==================================================*/
+@font-face {
+    font-family: 'Avenir-black';
+    src: url('../fonts/Avenir-Black.eot');
+    src: url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        /* url('../fonts/Avenir-Black.woff2') format('woff2'), */
+        url('../fonts/Avenir-Black.woff') format('woff'),
+        url('../fonts/Avenir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+     display:swap;
+}
+
+/*================================================
+    Tipograf�a Gruesa
+==================================================*/
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('../fonts/Avenir-Book.eot');
+    src: url('../fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        /* url('../fonts/Avenir-Book.woff2') format('woff2'), */
+        url('../fonts/Avenir-Book.woff') format('woff'),
+        url('../fonts/Avenir-Book.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+     display:swap;
+}
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('../fonts/Avenir-Heavy.eot');
+    src: url('../fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        /* url('../fonts/Avenir-Heavy.woff2') format('woff2'), */
+        url('../fonts/Avenir-Heavy.woff') format('woff'),
+        url('../fonts/Avenir-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+     display:swap;
+}
+
+/*================================================
+	Tipograf�a fina
+==================================================*/
+@font-face {
+    font-family: 'Avenir-Light';
+    src:url('../fonts/Avenir-Light.eot') format('eot'),
+    	url('../fonts/Avenir-Light.svg') format('svg'),
+    	url('../fonts/Avenir-Light.ttf') format('ttf'),
+    	/* url('../fonts/Avenir-Light.woff2') format('woff2'), */
+        url('../fonts/Avenir-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+     display:swap;
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src:url('../fonts/Avenir-Medium.eot') format('eot'),
+    	url('../fonts/Avenir-Medium.svg') format('svg'),
+    	url('../fonts/Avenir-Medium.ttf') format('ttf'),
+    	/* url('../fonts/Avenir-Medium.woff2') format('woff2'), */
+        url('../fonts/Avenir-Medium.woff') format('woff');
+    font-style: normal;
+     display:swap;
+}
+
+@font-face {
+    font-family: 'Avenir-Roman';
+    src:url('../fonts/Avenir-Roman.eot') format('eot'),
+    	url('../fonts/Avenir-Roman.svg') format('svg'),
+    	url('../fonts/Avenir-Roman.ttf') format('ttf'),
+    	/* url('../fonts/Avenir-Roman.woff2') format('woff2'), */
+        url('../fonts/Avenir-Roman.woff') format('woff');
+    font-style: normal;
+     display:swap;
+}

@@ -1,0 +1,173 @@
+*{
+    font-family: 'Avenir-Roman';
+}
+
+/*COLORES de texto*/
+.c-primary-cfn{
+    color: #006595;
+}
+
+.c-secundary-cfn{
+    color: #009FC2;
+}
+
+.c-tercero-cfn{
+    color: #8AD4DF;
+}
+
+/*Colores de fondo*/
+.bg-primary-cfn{
+    background-color: #006595;
+}
+
+.bg-secundary-cfn{
+    background-color: #009FC2;
+}
+
+.bg-tercero-cfn{
+    background-color: #8AD4DF;
+}
+/*ALTERNATIVO COLOR*/
+.bg-alternativo{
+    background-color: #53C0C7;
+}
+.bg-alternativo-1{
+    background-color: #1F5FAD;
+}
+.c-alternativo{
+    color:#53C0C7;
+}.c-alternativo-1{
+    color:#1F5FAD;
+}
+
+/************TEXTO AVENIR*************************/
+.f-a-roman{
+    font-family: 'Avenir-Roman';
+}
+.f-a-medium{
+    font-family: 'Avenir-Medium';
+}
+.f-a-black{
+    font-family: 'Avenir-black';
+}
+.f-a-book{
+    font-family: 'Avenir-Book';
+}
+.f-a-heavy{
+    font-family: 'Avenir-Heavy';
+}
+.f-a-light{
+    font-family: 'Avenir-Light';
+}
+
+body
+{
+    /* background: url('../img/cfn-fondo-login.png'),
+                url('../img/bg-fondo-rimario.png');
+    background-blend-mode: multiply; */
+    background: linear-gradient(rgba(41,106,195,.7), rgba(41,106,195,.7)), url('../img/cfn-fondo-login.png');
+    background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.logo{
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+.logoB{
+    
+    width: 150px;
+    height: auto;
+}
+
+
+.loginIndex{
+    font-size: 3rem;
+    line-height : auto;
+    text-align: center;
+}
+
+
+h1{
+    /* font-family: 'Avenir-Roman';
+    font-family: 'Avenir-Medium'; */
+    font-family: 'Avenir-black';
+/* font-family: 'Avenir-Book';
+font-family: 'Avenir-Heavy';
+font-family: 'Avenir-Light'; */
+}
+
+
+
+/**Style SVG**/
+#fondoSVG{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+
+.svgIndex{
+    /* este es el vioport */
+    /* width:50%; */
+    height:100%;
+}
+/**************************************RESPONSIVE***********************************7
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1{
+        
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+    .loginIndex{
+        font-size: 5rem;
+        line-height : 80px;
+        text-align: left;
+    }
+    .logo{
+        width: 250px;
+        height: auto;
+        margin: 0 auto 0 0;
+    }
+    .svgIndex{
+    /* este es el vioport */
+    /* width:50%; */
+    height:150%;
+    }
+    /**Style SVG**/
+    #fondoSVG{
+        width: 50%;
+        position: absolute;
+        z-index: -1;
+    
+        overflow: hidden;
+        right: 0;
+        height: 100vh;
+    }
+    h1{
+        
+    }
+}
+/*ssssssssssssss*/
+.p-natural{
+    line-height: 10px;
+}

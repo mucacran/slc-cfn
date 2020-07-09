@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de crédito</title>
+
+    <!-- icon -->
+    <link rel="apple-touch-icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.png"/>
+	<link rel="icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.png"/>
+	<link rel="icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.ico"/>
+
+    <!-- imoprt styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="css/fuenteAvenir.css">
+    <link rel="stylesheet" href="css/style-cfn.css">
+
+    <!-- javascript sergiobravo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js" defer></script>
+
+</head>
+<body class="position-relative">
+    <div class="w-75 position-absolute d-flex" style="height: 75px;top: 0;left:50%;margin-left: -37.5%;">
+        <div class="logoB  mt-3"><img src="img/logoW.svg" alt="cfn"></div>
+        <div class="logoB ml-auto mt-3"><img src="img/escudo-pais.png" alt="cfn"></div>
+    </div>
+    <div class="container-fluit text-white d-flex align-items-center vh-100 "> <!--viewBox="0 0 1476.61 1308.408"   2952.61 2616.408-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12  d-flex justify-content-center align-items-center flex-column "> <!--align-items-center -->
+                    <h1 class="w-100 text-center display-3">SOLICITUD DE CRÉDITO<br><span class="text-white h2 d-block">Obtén un crédito de acuerdo a tu negocio</span></h1>
+                </div>
+                <div style="width: 100%;height: 50px;"></div>
+            </div>
+            <div class="row">
+                <div id="nuevasoicitud" class="col-md-12 col-sm-12 text-center overflow-hidden" style="height: 48px;">
+                    <a class="btn btn-lg bg-white w-50 c-secundary-cfn" href="#" title="nueva solicitud"><i class="fa fa-user-circle display-5"></i> NUEVA SOLICITUD</a>
+                    <select class="btn btn-lg bg-white w-50 c-secundary-cfn">
+                        <option value="dsdsd">Selección 1</option>
+                        <option value="dsdsd"><a href="solicitud-de-credito1.php">Selección 2</a></option>
+                        <option value="dsdsd">Selección 3</option>
+                        <option value="dsdsd">Selección 4</option>
+                        <option value="dsdsd">Selección 5</option>
+                    </select>
+                </div>
+                <div style="width: 100%;height: 75px;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h2 class="h1">Bienvenido(a) Ana Moreira</h2><span class="text-white h5 p-natura d-block" >Para empezar necesitas crear una solicitud</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var nuevasoicitud = document.querySelectorAll('#nuevasoicitud a, #nuevasoicitud select' );
+    $(nuevasoicitud[1]).addClass('d-none');
+    $(nuevasoicitud[0]).click(function() {
+        $(nuevasoicitud[1]).removeClass( "d-none" ).addClass( "animate__animated animate__fadeInLeft" );
+        $(nuevasoicitud[0]).addClass( "animate__animated animate__fadeOutRight" );
+        setTimeout(
+        function() 
+        {
+            $(nuevasoicitud[0]).addClass( "d-none" );
+        }, 500);
+    })
+    
+
+</script>
+</body>
+</html>
