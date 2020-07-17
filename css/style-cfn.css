@@ -171,3 +171,12 @@ font-family: 'Avenir-Light'; */
 .p-natural{
     line-height: 10px;
 }
+
+select:focus,
+option:focus,
+textarea:focus,
+input:focus,
+a:focus,
+button:focus{
+    outline: 0;
+}
