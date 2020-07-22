@@ -38,30 +38,34 @@
     </div>
     <div class="container mt-3">
         <div class="row">
-            <div class="logoSolicitud">
+            <div class="col-sm-12 col-md-6">
                 <h1 class="m-0 text-white d-flex align-items-center h3 font-weight-bolder"><i class="fa fa-user"></i><span class="ml-2">Solicitudes<br> de Crédito</span></h1>
             </div>
-            <div class="usuario ml-auto">
-                <div class="nombre">
-                    <h2 class="m-0 text-white d-flex align-items-center h3"><i class="fa fa-users"></i><span class="ml-2">Bienvenido(a) Ana Moreira</span></h2>
+            <div class="col-sm-12 col-md-6 ml-auto">
+                <div class="d-flex">
+                    <h2 class="m-0 text-white h3 ml-auto">
+                        <i class="fa fa-users"></i><span class="ml-2 text-right">Bienvenido(a) Ana Moreira</span>
+                    </h2>
                 </div>
-                <div class="detalle text-white">
+                <div class="detalle text-white text-right">
                     <span>Tipo de crédito: PYMES</span> | <span>No. trámite: RDRT1989</span>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container mt-3">
         <div class="row mt-4">
             <nav class="col-sm-12 bg-light rounded-top">
                 <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-solicitud-tab" data-toggle="tab" href="#datos-solicitud" role="tab" aria-controls="nav-home" aria-selected="true">Datos de solicitud</a>
-                    <a class="nav-item nav-link" id="nav-deudor-tab" data-toggle="tab" href="#nav-deudor" role="tab" aria-controls="nav-profile" aria-selected="false">Datos de deudor</a>
-                    <a class="nav-item nav-link" id="nav-garante-tab" data-toggle="tab" href="#nav-garante" role="tab" aria-controls="nav-contact" aria-selected="false">Datos de garante</a>
-                    <a class="nav-item nav-link" id="nav-confirmacion-tab" data-toggle="tab" href="#nav-confirmacion" role="tab" aria-controls="nav-contact" aria-selected="false">Confirmación</a>
-                    <a class="nav-item nav-link" id="nav-impresion-tab" data-toggle="tab" href="#nav-impresion" role="tab" aria-controls="nav-contact" aria-selected="false">Impresión</a>
+                    <a class="nav-item nav-link active" id="nav-solicitud-tab" data-toggle="tab" href="#datos-solicitud" role="tab" aria-controls="datos-solicitud" aria-selected="true">Datos de solicitud</a>
+                    <a class="nav-item nav-link" id="nav-deudor-tab" data-toggle="tab" href="#nav-deudor" role="tab" aria-controls="nav-deudor" aria-selected="false">Datos de deudor</a>
+                    <a class="nav-item nav-link" id="nav-garante-tab" data-toggle="tab" href="#nav-garante" role="tab" aria-controls="nav-garante" aria-selected="false">Datos de garante</a>
+                    <a class="nav-item nav-link" id="nav-confirmacion-tab" data-toggle="tab" href="#nav-confirmacion" role="tab" aria-controls="nav-confirmacion" aria-selected="false">Confirmación</a>
+                    <a class="nav-item nav-link" id="nav-impresion-tab" data-toggle="tab" href="#nav-impresion" role="tab" aria-controls="nav-impresion" aria-selected="false">Impresión</a>
                 </div>
             </nav>
             <div class="bg-white tab-content col-sm-12" id="myTabContent">
-                <div class="tab-pane fade show active" id="datos-solicitud" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane fade show active" id="datos-solicitud" role="tabpanel" aria-labelledby="nav-solicitud-tab">
                     <select class="btn-sm rounded-pill d-inline w-50 mb-2 border mt-2" name="tipo-de-proyecto" id="tipo_de_proyecto">
                         <option value="proyecto1">Tipo de proyecto</option>
                         <option value="proyecto1">opcion2</option>
@@ -273,7 +277,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <div id="anadiendoDG" class="h-auto d-block"></div>
+                            <div id="anadiendoDG1" class="h-auto d-block"></div>
                         </div>
                     </div>
                     <div id="recursos-humanos">
@@ -359,16 +363,16 @@
                     </div>
                     <div class="w-100" style="height: 100px;"></div>
                 </div>
-                <div class="  tab-pane fade" id="nav-deudor" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="  tab-pane fade" id="nav-deudor" role="tabpanel" aria-labelledby="nav-deudor-tab">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
                 </div>
-                <div class=" tab-pane fade" id="nav-garante" role="tabpanel" aria-labelledby="contact-tab">
+                <div class=" tab-pane fade" id="nav-garante" role="tabpanel" aria-labelledby="nav-garante-tab">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
                 </div>
-                <div class=" tab-pane fade" id="nav-confirmacion" role="tabpanel" aria-labelledby="contact-tab">
+                <div class=" tab-pane fade" id="nav-confirmacion" role="tabpanel" aria-labelledby="nav-confirmacion-tab">
                     texto 1
                 </div>
-                <div class="tab-pane fade" id="nav-impresion" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="tab-pane fade" id="nav-impresion" role="tabpanel" aria-labelledby="nav-impresion-tab">
                     tecto
                 </div>
             </div>
