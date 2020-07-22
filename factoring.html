@@ -62,11 +62,63 @@
                 <a class="nav-item nav-link" id="nav-Impresion" data-toggle="tab" href="#Impresion" role="tab" aria-controls="Impresion" aria-selected="false">Impresión</a>
             </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="Datos-de-Solicitud" role="tabpanel" aria-labelledby="nav-Datos-de-Solicitud">
-                <h2 class="text-center text-white">
-                    Uno
-                </h2>
+        <div class="tab-content bg-white" id="nav-tabContent">
+            <div id="accordionDatosDeSolicitud" class="tab-pane fade show active" id="Datos-de-Solicitud" role="tabpanel" aria-labelledby="nav-Datos-de-Solicitud">
+                <div class="justify-content-start">
+                    <div class="col-5">
+                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border mt-2" name="tipo-de-factoring" id="tipo_de_factoring">
+                            <option value="proyecto1">Tipo de Factoring</option>
+                            <option value="proyecto2">opcion2</option>
+                            <option value="proyecto3">opcion3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <div id="headingUno" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                        <h3 class="text-uppercase mb-0 c-secundary-cfn">Datos de la empresa</h3>
+                    </div>
+                    <hr class="mb-0 mt-0">
+                    <div id="collapseUno" class="collapse" aria-labelledby="headingUno" data-parent="#accordionDatosDeSolicitud">
+                        <div class="card-body">
+                            <input class="btn-sm rounded-pill w-100 mb-2 border" type="text" placeholder="Razón social/nombre de la empresa">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="Nacionalidad">Nacionalidad</option>
+                                        <option value="opcion1">Opcion1</option>
+                                        <option value="opcion2">Opcion2</option>
+                                        <option value="opcion3">Opcion3</option>
+                                    </select>
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="RUC">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Experiencia en la actividad : Años/mes  ">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Capital social suscrito y pagado">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Estructura">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="Nacionalidad">Actividad económica</option>
+                                        <option value="opcion1">Opcion1</option>
+                                        <option value="opcion2">Opcion2</option>
+                                        <option value="opcion3">Opcion3</option>
+                                    </select>
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Objeto Social">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="date" placeholder="Experiencia en la actividad : Años/mes  ">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-12 col-md-4">
+                                    <input class="btn-sm rounded-pill border w-100" type="text" class="total de">
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <input class="btn-sm rounded-pill border w-100" type="text" class="total de">
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <input class="btn-sm rounded-pill border w-100" type="text" class="total de">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="Datos-de-Deudor" role="tabpanel" aria-labelledby="nav-Datos-de-Deudor">
                 <h2 class="text-center text-white">
