@@ -34,6 +34,32 @@
         .fecha:hover + .fechaClass{
             display: block;
         }
+
+        .delay-1 {
+            animation-delay: .25s;
+        }
+        .delay-2 {
+            animation-delay: .5s;
+        }
+        .delay-3 {
+            animation-delay: .75s;
+        }
+        .delay-4 {
+            animation-delay: 1s;
+        }
+        .delay-5 {
+            animation-delay: 1.25s;
+        }
+        .delay-6 {
+            animation-delay: 1.50s;
+        }
+        .delay-7 {
+            animation-delay: 1.75s;
+        }
+        .delay-8 {
+            animation-delay: 2s;
+        }
+        
     </style>
 </head>
 <body>
@@ -87,7 +113,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="card border-0">
+                <div class="card border-0 animate__animated animate__fadeInRight">
                     <div id="headingUno" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
                         <h3 class="text-uppercase mb-0 c-secundary-cfn">Datos de la empresa</h3>
                     </div>
@@ -146,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-0">
+                <div class="card border-0 animate__animated animate__fadeInRight delay-1">
                     <div id="headingDos" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
                         <h3 class="text-uppercase mb-0 c-secundary-cfn">ESTRUCTURA ACCIONARIA</h3>
                     </div>
@@ -197,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-0">
+                <div class="card border-0 animate__animated animate__fadeInRight delay-2">
                     <div id="headingTres" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseTres" aria-expanded="true" aria-controls="collapseTres">
                         <h3 class="text-uppercase mb-0 c-secundary-cfn">UBICACIÓN DE OFICINAS</h3>
                     </div>
@@ -290,7 +316,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-0">
+                <div class="card border-0 animate__animated animate__fadeInRight delay-3">
                     <div id="headingCuatro" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="true" aria-controls="collapseCuatro">
                         <h3 class="text-uppercase mb-0 c-secundary-cfn">PRINCIPALES DIRECTIVOS / ADMINISTRADORES</h3>
                     </div>
@@ -327,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-0">
+                <div class="card border-0 animate__animated animate__fadeInRight delay-4">
                     <div id="headingCinco" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="true" aria-controls="collapseCinco">
                         <h3 class="text-uppercase mb-0 c-secundary-cfn">EMPRESAS VINCULADAS</h3>
                     </div>
@@ -357,7 +383,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-0">
+                <div class="card border-0 animate__animated animate__fadeInRight delay-5">
                     <div id="headingSeis" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="true" aria-controls="collapseSeis">
                         <h3 class="text-uppercase mb-0 c-secundary-cfn">REPRESENTANTE LEGAL</h3>
                     </div>
@@ -410,8 +436,192 @@
                                         <option value="opcion2">2</option>
                                     </select>
                                 </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Formación Académica</option>
+                                        <option value="opcion2">1</option>
+                                        <option value="opcion2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-8">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Título">
+                                </div>
+                                <div class="col-sm-12">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Dirección de domicilio">
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Provincia</option>
+                                        <option value="opcion2">1</option>
+                                        <option value="opcion2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Parroquia</option>
+                                        <option value="opcion2">1</option>
+                                        <option value="opcion2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Cantón</option>
+                                        <option value="opcion2">1</option>
+                                        <option value="opcion2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Ciudad</option>
+                                        <option value="opcion2">1</option>
+                                        <option value="opcion2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Calle">
+                                </div>
+                                <div class="col-sm-12 col-md-2">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N°">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Tipo de vivienda</option>
+                                        <option value="opcion2">1</option>
+                                        <option value="opcion2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Precio">
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Fax">
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Celular">
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="mail" placeholder="E-mail">
+                                </div>
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="form-check mb-3">
+                                        <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
+                                        <label class="form-check-label" for="Politicamente-expuesto-PEP">Políticamente expuesto (PEP)</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Institución">
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Cargo</option>
+                                        <option value="opcion2">1</option>
+                                        <option value="opcion2">2</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="card border-0 animate__animated animate__fadeInRight delay-6">
+                    <div id="headingSiete" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="true" aria-controls="collapseSiete">
+                        <h3 class="text-uppercase mb-0 c-secundary-cfn">DATOS DEL CÓNYUGE REPRESENTANTE LEGAL</h3>
+                    </div>
+                    <hr class="mt-0 mb-0">
+                    <div id="collapseSiete" class="collapse" aria-labelledby="headingSiete" data-parent="#Datos-de-Solicitud">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Apellidos y Nombres">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                        <option value="opcion1">Nacionalidad</option>
+                                        <option value="opcion2">Opcion1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 animate__animated animate__fadeInRight delay-7">
+                    <div id="headingOcho" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseOcho" aria-expanded="true" aria-controls="collapseOcho">
+                        <h3 class="text-uppercase mb-0 c-secundary-cfn">DATOS DEL FACTORING ELECTRÓNICO/INTERNACIONAL</h3>
+                    </div>
+                    <hr class="mt-0 mb-0">
+                    <div id="collapseOcho" class="collapse" aria-labelledby="headingOcho" data-parent="#Datos-de-Solicitud">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            El monto máximo de factoring: 
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="mb-0">Será el establecido acorde a la metodología de riesgos y aprobado por la instancia administrativa correspondiente (Comité de Negocios o Directorio).  El cupo que se aplique a la operación no podrá ser mayor al establecido acorde a metodología correspondiente y constará en los contratos respectivos a ser suscritos por el cliente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Monto">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Vigencia">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 animate__animated animate__fadeInRight delay-8">
+                    <div id="headingNueve" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseNueve" aria-expanded="true" aria-controls="collapseNueve">
+                        <h3 class="text-uppercase mb-0 c-secundary-cfn">REFERENCIAS DEL CLIENTE</h3>
+                    </div>
+                    <hr class="mt-0 mb-0">
+                    <div id="collapseNueve" class="collapse" aria-labelledby="headingNueve" data-parent="#Datos-de-Solicitud">
+                        <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h4 class="mb-0 ">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Referencias Bancarias
+                                    </button>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-3">
+                                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                    <option value="">Banco</option>
+                                                    <option value="proyecto2">opcion2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-12 col-md-3">
+                                                <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N° de cuenta">
+                                            </div>
+                                            <div class="col-sm-12 col-md-3">
+                                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                    <option value="proyecto1">Tipo de cuenta</option>
+                                                    <option value="proyecto2">opcion2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-12 col-md-3">
+                                                <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="date">
+                                                <div class="fechaClass p-2 bg-white border animate__animated animate__backInRight">
+                                                    <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha apertura
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
                     </div>
                 </div>
             </div>
