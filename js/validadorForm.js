@@ -23,7 +23,6 @@
 // }
 
 /*scrooll deslizante*/
-
 $(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: "#flechaArriba, #flechaAbajo", offset: 50});   
@@ -51,5 +50,7 @@ $(document).ready(function(){
     }  // End if
   });
 });
+
+
 
 

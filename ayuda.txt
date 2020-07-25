@@ -7,3 +7,11 @@ https://getbootstrap.com/docs/4.5/utilities/text/#text-transform
 https://getbootstrap.com/docs/4.5/utilities/position/
 https://getbootstrap.com/docs/4.5/utilities/borders/
 https://getbootstrap.com/docs/4.5/utilities/borders/#border-color 
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.es.min.js" defer></script>
