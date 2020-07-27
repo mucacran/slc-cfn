@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del deudor</title>
+
+    <!-- icon -->
+    <link rel="apple-touch-icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.png"/>
+	<link rel="icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.png"/>
+	<link rel="icon" href="https://www.cfn.fin.ec/wp-content/themes/cfn/img/favicon.ico"/>
+
+    <!-- imoprt styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="css/fuenteAvenir.css">
+    <link rel="stylesheet" href="css/factoring.css">
+    <link rel="stylesheet" href="css/style-cfn.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" defer></script>
+    <script src="js/factoringHtml.js" defer></script>
+
+</head>
+<body>
+    <div class="container-fluid" style="background-color: #001C4F;height: 90px;">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 text-white">
+                    <div class="w-100 d-flex align-items-center">
+                        <div class="logoB  mt-3"><img src="img/logoW.svg" alt="cfn"></div>
+                        <div class="logoB ml-auto mt-3"><img src="img/escudo-pais.png" alt="cfn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h1 class="m-0 text-white d-flex align-items-center h3 font-weight-bolder"><i class="fa fa-user"></i><span class="ml-2">Solicitudes<br> de Crédito</span></h1>
+            </div>
+            <div class="col-sm-12 col-md-6 ml-auto">
+                <div class="d-flex">
+                    <h2 class="m-0 text-white h3 ml-auto">
+                        <i class="fa fa-users"></i><span class="ml-2 text-right">Bienvenido(a) Ana Moreira</span>
+                    </h2>
+                </div>
+                <div class="detalle text-white text-right">
+                    <span>Tipo de crédito: PYMES</span> | <span>No. trámite: RDRT1989</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container overflow-hidden">
+        <nav class="bg-light">
+            <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link" id="nav-Datos-de-Solicitud" data-toggle="tab" href="#Datos-de-Solicitud" role="tab" aria-controls="Datos-de-Solicitud" aria-selected="true">Datos de Solicitud</a>
+                <a class="nav-item nav-link active" id="nav-Datos-de-Deudor" data-toggle="tab" href="#Datos-de-Deudor" role="tab" aria-controls="Datos-de-Deudor" aria-selected="false">Datos de Deudor</a>
+                <a class="nav-item nav-link" id="nav-Datos-de-Garante" data-toggle="tab" href="#Datos-de-Garante" role="tab" aria-controls="Datos-de-Garante" aria-selected="false">Datos de Garante</a>
+                <a class="nav-item nav-link" id="nav-Confirmacion" data-toggle="tab" href="#Confirmacion" role="tab" aria-controls="Confirmacion" aria-selected="false">Confirmación</a>
+                <a class="nav-item nav-link" id="nav-Impresion" data-toggle="tab" href="#Impresion" role="tab" aria-controls="Impresion" aria-selected="false">Impresión</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div id="Datos-de-Solicitud" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Datos-de-Solicitud">
+                <h2 class="text-center">
+                    Uno
+                </h2>
+            </div>
+            <div id="Datos-de-Deudor" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-Datos-de-Deudor">
+                <form action="#">
+                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
+                        <div id="headingUno" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                            <h3 class="text-uppercase mb-0 c-secundary-cfn">Datos de la empresa</h3>
+                        </div>
+                        <hr class="mb-0 mt-0">
+                        <div id="collapseUno" class="collapse show" aria-labelledby="headingUno" data-parent="#Datos-de-Solicitud">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre completo">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="Cédula">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad">Nacionalidad</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <input class="form-control fecha btn-sm rounded-pill w-100 border mb-3" type="date" lang="es" value="">
+                                        <div class="fechaClass p-2 bg-white border">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i> Nacimiento  dd/mm/aaaa
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Carnet CONADIS</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-3">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Sexo</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Estado Civil</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Separación de Bienes</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>N° de cargas familiares</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-4">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Formación académica</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="Título">
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-12">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="Dirección domicilio">
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-4">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Provincia</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Parroquia</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Cantón</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-4">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Ciudad</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="Calle">
+                                    </div>
+                                    <div class="col-sm-12 col-md-1">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="N°">
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-6">
+                                        <select class="btn-sm rounded-pill w-100 border mb-3">
+                                            <option value="Nacionalidad" disabled selected>Tipo de vivienda</option>
+                                            <option value="opcion1">Opcion1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="Precio">
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-3">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="email" placeholder="Teléfono">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="Fax">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="text" placeholder="Celular">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <input class="btn-sm rounded-pill border w-100 mb-3" type="email" placeholder="Email">
+                                    </div>
+                                    <!-- fila -->
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
+                                            <label class="form-check-label" for="Politicamente-expuesto-PEP">Empleado público</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
+                                            <label class="form-check-label" for="Politicamente-expuesto-PEP">Empleado peibado</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
+                                            <label class="form-check-label" for="Politicamente-expuesto-PEP">Trabajadr indipendient</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="Datos-de-Garante" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Datos-de-Garante">
+                <h2 class="text-center">
+                    Tres
+                </h2>
+            </div>
+            <div id="Confirmacion" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Confirmacion">
+                <h2 class="text-center">
+                    Cuatro
+                </h2>
+            </div>
+            <div id="Impresion" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Impresion">
+                <h2 class="text-center">
+                    Cinco
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
