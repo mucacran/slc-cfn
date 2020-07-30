@@ -50,7 +50,7 @@
 .f-a-black{
     font-family: 'Avenir-black';
 }
-.f-a-book{
+.mr-auto{
     font-family: 'Avenir-Book';
 }
 .f-a-heavy{
@@ -211,3 +211,7 @@ button:focus{
     animation-delay: 2.25s;
 }
 /**************************************************/
+.nav-tabs .nav-link.active
+{
+    border-bottom: 2px solid #178CD0;
+}
