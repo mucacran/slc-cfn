@@ -24,7 +24,7 @@
 
 </head>
 <body class="position-relative">
-    <div class="w-100 " style="background-color: #001C4F;height: 90px;">
+    <div class="container-fluid" style="background-color: #001C4F;height: 90px;">
         <div class="container ">
             <div class="row ">
                 <div class="col-sm-12 text-white">
@@ -38,34 +38,44 @@
     </div>
     <div class="container mt-3">
         <div class="row">
-            <div class="logoSolicitud">
-                <h1 class="m-0 text-white d-flex align-items-center h3"><i class="fa fa-user"></i><span class="ml-2">Solicitudes<br> de Crédito</span></h1>
+            <div class="col-sm-12 col-md-7">
+                <h1 class="m-0 text-white d-flex align-items-center h3 font-weight-bolder text-uppercase">
+                    <img src="img/iconoSoliciG.png" alt="Solicitudes de Crédito" width="50">
+                    <span class="ml-2 ">Solicitudes<br> de Crédito</span>
+                </h1>
             </div>
-            <div class="usuario ml-auto">
-                <div class="nombre">
-                    <h2 class="m-0 text-white d-flex align-items-center h3"><i class="fa fa-users"></i><span class="ml-2">Bienvenido(a) Ana Moreira</span></h2>
+            <div class="col-sm-12 col-md-5 ml-auto d-flex align-items-center">
+                <div class="d-flex">
+                    <h2 class="m-0 text-white h3 ml-auto p-2">
+                        <i class="fa fa-users"></i>
+                        <span class="ml-2 text-right">Bienvenido(a)</span><br>
+                        <span class="ml-2 text-right">Ana Moreira</span>
+                    </h2>
                 </div>
-                <div class="detalle text-white">
-                    <span>Tipo de crédito: PYMES</span> | <span>No. trámite: RDRT1989</span>
+                <div class="detalle text-white text-right p-2 ml-auto">
+                    <span>Tipo de crédito: PYMES</span><br>
+                    <span>No. trámite: RDRT1989</span>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <nav class="col-sm-12 bg-white rounded-top">
-                <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-solicitud-tab" data-toggle="tab" href="#nav-solicitud" role="tab" aria-controls="nav-home" aria-selected="true">Datos de solicitud</a>
-                    <a class="nav-item nav-link" id="nav-deudor-tab" data-toggle="tab" href="#nav-deudor" role="tab" aria-controls="nav-profile" aria-selected="false">Datos de deudor</a>
-                    <a class="nav-item nav-link" id="nav-garante-tab" data-toggle="tab" href="#nav-garante" role="tab" aria-controls="nav-contact" aria-selected="false">Datos de garante</a>
+    </div>
+    <div class="container-fluit mt-3 overflow-hidden">
+        <div class="container">
+            <nav class="bg-light rounded-top pt-3">
+                <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-solicitud-tab" data-toggle="tab" href="#nav-solicitud" role="tab" aria-controls="nav-home" aria-selected="true">Datos de Solicitud</a>
+                    <a class="nav-item nav-link" id="nav-deudor-tab" data-toggle="tab" href="#nav-deudor" role="tab" aria-controls="nav-profile" aria-selected="false">Datos de Deudor</a>
+                    <a class="nav-item nav-link" id="nav-garante-tab" data-toggle="tab" href="#nav-garante" role="tab" aria-controls="nav-contact" aria-selected="false">Datos de Garante</a>
                     <a class="nav-item nav-link" id="nav-confirmacion-tab" data-toggle="tab" href="#nav-confirmacion" role="tab" aria-controls="nav-contact" aria-selected="false">Confirmación</a>
                     <a class="nav-item nav-link" id="nav-impresion-tab" data-toggle="tab" href="#nav-impresion" role="tab" aria-controls="nav-contact" aria-selected="false">Impresión</a>
                 </div>
             </nav>
-            <div class="bg-white tab-content col-sm-12" id="myTabContent">
+            <div class="bg-white tab-content rounded-bottom" id="myTabContent">
                 <div class="tab-pane fade show active" id="nav-solicitud" role="tabpanel" aria-labelledby="home-tab">
                     <form action="">
-                        <div class="card border-0">
+                        <div class="card border-0 animate__animated animate__fadeInRight delay-1">
                             <div class="card-header bg-transparent border-0 pb-0" id="DatosDelDeudor1">
-                                <h3 class="mb-0 mt-4 ">
+                                <h3 class="mb-0">
                                     <button class="c-secundary-cfn text-uppercase text-left w-100 bg-transparent border-0" type="button" data-toggle="collapse" data-target="#DatosDelDeudor1-collapse" aria-expanded="true" aria-controls="DatosDelDeudor1-collapse">
                                         Datos del deudor
                                     </button>
@@ -79,9 +89,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card border-0">
+                        <div class="card border-0 animate__animated animate__fadeInRight delay-2">
                             <div class="card-header bg-transparent border-0 pb-0" id="DatosDelFInanciero2">
-                                <h3 class="mb-0 mt-4 ">
+                                <h3 class="mb-0">
                                     <button class="c-secundary-cfn text-uppercase text-left w-100 bg-transparent border-0 shadow-none" type="button" data-toggle="collapse" data-target="#DatosDelFiancieros2-collapse" aria-expanded="true" aria-controls="DatosDelFiancieros2-collapse">
                                         Datos financieros
                                     </button>
@@ -113,14 +123,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="detalle-inversion-gastos" class="card border-0">
-                            <div class="d-flex card-header bg-transparent border-0 pb-0">
-                                <h3 class="mb-0 mt-4 mr-auto">
-                                    <button class="c-secundary-cfn text-uppercase text-left bg-transparent border-0" type="button" data-toggle="collapse" data-target="#dig-3" aria-expanded="true" aria-controls="">
-                                        Detalle de inversión de gastos
-                                    </button>
-                                </h3>
-                                <div id="anadirDIG" class="mt-4 d-inline">Añadir <i class="text-danger fa fa-plus-circle"></i></div>
+                        <div id="detalle-inversion-gastos" class="card border-0 animate__animated animate__fadeInRight delay-3">
+                            <div class="d-flex">
+                                <div class="d-flex card-header bg-transparent border-0 pb-0">
+                                    <h3 class="mb-0mr-auto">
+                                        <button class="c-secundary-cfn text-uppercase text-left bg-transparent border-0" type="button" data-toggle="collapse" data-target="#dig-3" aria-expanded="true" aria-controls="">
+                                            Detalle de inversión de gastos
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                </div>
                             </div>
                             <hr class="mt-0 mb-0">
                             <div id="dig-3" class="collapse" aria-labelledby="" data-parent="#nav-solicitud">
@@ -141,9 +155,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="recursos-humanos" class="card border-0">
+                        <div id="recursos-humanos" class="card border-0 animate__animated animate__fadeInRight delay-4">
                             <div class="d-flex card-header bg-transparent border-0 pb-0" id="rh-4">
-                                <h3 class="mb-0 mt-4 mr-auto">
+                                <h3 class="mb-0mr-auto">
                                     <button class="c-secundary-cfn text-uppercase text-left bg-transparent border-0" type="button" data-toggle="collapse" data-target="#rh-4-c" aria-expanded="true" aria-controls="rh-4-c">
                                         Recursos humanos
                                     </button>
@@ -178,9 +192,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="datos-garantia" class="card border-0">
+                        <div id="datos-garantia" class="card border-0 animate__animated animate__fadeInRight delay-5">
                             <div id="datos-garantia-5" class="card-header bg-transparent border-0 pb-0 d-flex">
-                                <h3 class="mb-0 mt-4">
+                                <h3 class="mb-0">
                                     <button class="c-secundary-cfn text-uppercase text-left bg-transparent border-0" type="button" data-toggle="collapse" data-target="#dtg-5" aria-expanded="true" aria-controls="dtg-5">
                                         Datos de garantía
                                     </button>
@@ -236,23 +250,17 @@
                     </form>
                     <div class="w-100" style="height: 100px;"></div>
                 </div>
-                <div class="  tab-pane fade" id="nav-deudor" role="tabpanel" aria-labelledby="profile-tab">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
-                
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                <div class="tab-pane fade" id="nav-deudor" role="tabpanel" aria-labelledby="profile-tab">
+                    DOS
                 </div>
                 <div class=" tab-pane fade" id="nav-garante" role="tabpanel" aria-labelledby="contact-tab">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                    TRES
                 </div>
                 <div class=" tab-pane fade" id="nav-confirmacion" role="tabpanel" aria-labelledby="contact-tab">
-                    texto 1
+                    CUATRO
                 </div>
                 <div class="tab-pane fade" id="nav-impresion" role="tabpanel" aria-labelledby="contact-tab">
-                    tecto
+                    CINCO
                 </div>
             </div>
         </div>
