@@ -40,888 +40,896 @@
     </div>
     <div class="container mt-3">
         <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h1 class="m-0 text-white d-flex align-items-center h3 font-weight-bolder"><i class="fa fa-user"></i><span class="ml-2">Solicitudes<br> de Crédito</span></h1>
+            <div class="col-sm-12 col-md-7">
+                <h1 class="m-0 text-white d-flex align-items-center h3 font-weight-bolder text-uppercase">
+                    <img src="img/iconoSoliciG.png" alt="Solicitudes de Crédito" width="50">
+                    <span class="ml-2 ">Solicitudes<br> de Crédito</span>
+                </h1>
             </div>
-            <div class="col-sm-12 col-md-6 ml-auto">
+            <div class="col-sm-12 col-md-5 ml-auto d-flex align-items-center">
                 <div class="d-flex">
-                    <h2 class="m-0 text-white h3 ml-auto">
-                        <i class="fa fa-users"></i><span class="ml-2 text-right">Bienvenido(a) Ana Moreira</span>
+                    <h2 class="m-0 text-white h3 ml-auto p-2">
+                        <i class="fa fa-users"></i>
+                        <span class="ml-2 text-right">Bienvenido(a)</span><br>
+                        <span class="ml-2 text-right">Ana Moreira</span>
                     </h2>
                 </div>
-                <div class="detalle text-white text-right">
-                    <span>Tipo de crédito: PYMES</span> | <span>No. trámite: RDRT1989</span>
+                <div class="detalle text-white text-right p-2 ml-auto">
+                    <span>Tipo de crédito: PYMES</span><br>
+                    <span>No. trámite: RDRT1989</span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container overflow-hidden">
-        <nav class="bg-light">
-            <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link" id="nav-Datos-de-Solicitud" data-toggle="tab" href="#Datos-de-Solicitud" role="tab" aria-controls="Datos-de-Solicitud" aria-selected="true">Datos de Solicitud</a>
-                <a class="nav-item nav-link active" id="nav-Datos-de-Deudor" data-toggle="tab" href="#Datos-de-Deudor" role="tab" aria-controls="Datos-de-Deudor" aria-selected="false">Datos de Deudor</a>
-                <a class="nav-item nav-link" id="nav-Datos-de-Garante" data-toggle="tab" href="#Datos-de-Garante" role="tab" aria-controls="Datos-de-Garante" aria-selected="false">Datos de Garante</a>
-                <a class="nav-item nav-link" id="nav-Confirmacion" data-toggle="tab" href="#Confirmacion" role="tab" aria-controls="Confirmacion" aria-selected="false">Confirmación</a>
-                <a class="nav-item nav-link" id="nav-Impresion" data-toggle="tab" href="#Impresion" role="tab" aria-controls="Impresion" aria-selected="false">Impresión</a>
-            </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div id="Datos-de-Solicitud" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Datos-de-Solicitud">
-                <h2 class="text-center">
-                    Uno
-                </h2>
-            </div>
-            <div id="Datos-de-Deudor" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-Datos-de-Deudor">
-                <form action="#">
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
-                        <div id="headingUno" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
-                            <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                DATOS DEL DEUDOR
-                            </h3>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseUno" class="collapse" aria-labelledby="headingUno" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <!-- fila -->
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Razón social/nombre de la empresa">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="RUC" pattern="[0-9]{13}">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Pais de Constitución</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="fecha btn-sm rounded-pill w-100 border" type="date" lang="es">
-                                        <div class="fechaClass p-2 bg-white border">
-                                            <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha de constitución dd/mm/aaaa
+    <div class="container-fluid mt-3 overflow-hidden">
+        <div class="container">
+            <nav class="bg-light rounded-top pt-3">
+                <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link" id="nav-Datos-de-Solicitud" data-toggle="tab" href="#Datos-de-Solicitud" role="tab" aria-controls="Datos-de-Solicitud" aria-selected="true">Datos de Solicitud</a>
+                    <a class="nav-item nav-link active" id="nav-Datos-de-Deudor" data-toggle="tab" href="#Datos-de-Deudor" role="tab" aria-controls="Datos-de-Deudor" aria-selected="false">Datos de Deudor</a>
+                    <a class="nav-item nav-link" id="nav-Datos-de-Garante" data-toggle="tab" href="#Datos-de-Garante" role="tab" aria-controls="Datos-de-Garante" aria-selected="false">Datos de Garante</a>
+                    <a class="nav-item nav-link" id="nav-Confirmacion" data-toggle="tab" href="#Confirmacion" role="tab" aria-controls="Confirmacion" aria-selected="false">Confirmación</a>
+                    <a class="nav-item nav-link" id="nav-Impresion" data-toggle="tab" href="#Impresion" role="tab" aria-controls="Impresion" aria-selected="false">Impresión</a>
+                </div>
+            </nav>
+            <div class="bg-white tab-content rounded-bottom" id="nav-tabContent">
+                <div id="Datos-de-Solicitud" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Datos-de-Solicitud">
+                    <h2 class="text-center">
+                        Uno
+                    </h2>
+                </div>
+                <div id="Datos-de-Deudor" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-Datos-de-Deudor">
+                    <form action="#">
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
+                            <div id="headingUno" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                    DATOS DEL DEUDOR
+                                </h3>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseUno" class="collapse" aria-labelledby="headingUno" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <!-- fila -->
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Razón social/nombre de la empresa">
                                         </div>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Ingresos mensuales">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total de activos">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total pasivos">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total patrimonio">
-                                    </div>
-                                    <!-- subs -->
-                                    <div class="col-sm-12">
-                                        <div id="administrativa-cuatro">
-                                            <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
-                                                <div id="administrativaCuatro" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#administrativaCuatro-1" aria-expanded="true" aria-controls="administrativaCuatro-1">
-                                                    <strong class="text-uppercase c-primary-cfn">DIRECCIONES Y TELÉFONOS</strong>
-                                                    <h4 class="text-uppercase mb-0 c-secundary-cfn">
-                                                        ADMINISTRATIVA
-                                                    </h4>
-                                                </div>
-                                                <hr class="mb-0 mt-0">
-                                                <div id="administrativaCuatro-1" class="collapse" aria-labelledby="administrativaCuatro" data-parent="#administrativa-cuatro">
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Provincia</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Parroquia</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Cantón</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <!-- fila -->
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Ciudad</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-7">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Dirección">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-2">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N°">
-                                                            </div>
-                                                            <!-- fila -->
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Fax">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Celular">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="email" placeholder="E-mail">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="RUC" pattern="[0-9]{13}">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Pais de Constitución</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="fecha btn-sm rounded-pill w-100 border" type="date" lang="es">
+                                            <div class="fechaClass p-2 bg-white border">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha de constitución dd/mm/aaaa
                                             </div>
-                                            <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
-                                                <div id="plantaCuatro" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#plantaCuatro-1" aria-expanded="true" aria-controls="plantaCuatro-1">
-                                                    <h4 class="text-uppercase mb-0 c-secundary-cfn">
-                                                        Plantal
-                                                    </h4>
-                                                </div>
-                                                <hr class="mb-0 mt-0">
-                                                <div id="plantaCuatro-1" class="collapse" aria-labelledby="plantaCuatro" data-parent="#administrativa-cuatro">
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Provincia</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Parroquia</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Cantón</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <!-- fila -->
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <select class="btn-sm rounded-pill w-100 border mb-3">
-                                                                    <option value="Nacionalidad" disabled selected>Ciudad</option>
-                                                                    <option value="opcion1">Opcion1</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-7">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Dirección">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-2">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N°">
-                                                            </div>
-                                                            <!-- fila -->
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Fax">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Celular">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="btn-sm rounded-pill w-100 border mb-3" type="email" placeholder="E-mail">
-                                                            </div>
-                                                            <!-- fila -->
-                                                            <div class="col-sm-12">
-                                                                Envió correspondencia:
-                                                                <div class="form-check d-inline ml-2 mr-2 pl-4 pr-2">
-                                                                    <input class="form-check-input" type="checkbox" id="corrspondencia">
-                                                                    <label class="form-check-label" for="corrspondencia">
-                                                                        Dirección administrativa
-                                                                    </label>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Ingresos mensuales">
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total de activos">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total pasivos">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total patrimonio">
+                                        </div>
+                                        <!-- subs -->
+                                        <div class="col-sm-12">
+                                            <div id="administrativa-cuatro">
+                                                <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
+                                                    <div id="administrativaCuatro" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#administrativaCuatro-1" aria-expanded="true" aria-controls="administrativaCuatro-1">
+                                                        <strong class="text-uppercase c-primary-cfn">DIRECCIONES Y TELÉFONOS</strong>
+                                                        <h4 class="text-uppercase mb-0 c-secundary-cfn">
+                                                            ADMINISTRATIVA
+                                                        </h4>
+                                                    </div>
+                                                    <hr class="mb-0 mt-0">
+                                                    <div id="administrativaCuatro-1" class="collapse" aria-labelledby="administrativaCuatro" data-parent="#administrativa-cuatro">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Provincia</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
                                                                 </div>
-                                                                
-                                                                <div class="form-check d-inline ml-2 mr-2 pl-4 pr-2">
-                                                                    <input class="form-check-input" type="checkbox" id="corrspondencias">
-                                                                    <label class="form-check-label" for="corrspondencias">
-                                                                        Dirección planta
-                                                                    </label>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Parroquia</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Cantón</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- fila -->
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Ciudad</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-7">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Dirección">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-2">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N°">
+                                                                </div>
+                                                                <!-- fila -->
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Fax">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Celular">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="email" placeholder="E-mail">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
+                                                    <div id="plantaCuatro" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#plantaCuatro-1" aria-expanded="true" aria-controls="plantaCuatro-1">
+                                                        <h4 class="text-uppercase mb-0 c-secundary-cfn">
+                                                            Plantal
+                                                        </h4>
+                                                    </div>
+                                                    <hr class="mb-0 mt-0">
+                                                    <div id="plantaCuatro-1" class="collapse" aria-labelledby="plantaCuatro" data-parent="#administrativa-cuatro">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Provincia</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Parroquia</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Cantón</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- fila -->
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                                        <option value="Nacionalidad" disabled selected>Ciudad</option>
+                                                                        <option value="opcion1">Opcion1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-7">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Dirección">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-2">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N°">
+                                                                </div>
+                                                                <!-- fila -->
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Fax">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Celular">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="btn-sm rounded-pill w-100 border mb-3" type="email" placeholder="E-mail">
+                                                                </div>
+                                                                <!-- fila -->
+                                                                <div class="col-sm-12">
+                                                                    Envió correspondencia:
+                                                                    <div class="form-check d-inline ml-2 mr-2 pl-4 pr-2">
+                                                                        <input class="form-check-input" type="checkbox" id="corrspondencia">
+                                                                        <label class="form-check-label" for="corrspondencia">
+                                                                            Dirección administrativa
+                                                                        </label>
+                                                                    </div>
+                                                                    
+                                                                    <div class="form-check d-inline ml-2 mr-2 pl-4 pr-2">
+                                                                        <input class="form-check-input" type="checkbox" id="corrspondencias">
+                                                                        <label class="form-check-label" for="corrspondencias">
+                                                                            Dirección planta
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-1">
-                        <div class="d-flex">
-                            <div id="headingDos" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
-                                <h3 class="text-uppercase mb-0 c-secundary-cfn">RESEÑA HISTÓRICA DEL NEGOCIO</h3>
-                            </div>
-                            <!-- boton añadir más -->
-                            <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
-                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                            </div>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseDos" class="collapse" aria-labelledby="headingDos" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <textarea class="form-control" placeholder="Se debe detallar toda la información pertinente acerca del negocio, experiencia en el negocio actual y cambios en línea de negocios." rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-1">
+                            <div class="d-flex">
+                                <div id="headingDos" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
+                                    <h3 class="text-uppercase mb-0 c-secundary-cfn">RESEÑA HISTÓRICA DEL NEGOCIO</h3>
+                                </div>
+                                <!-- boton añadir más -->
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-2">
-                        <div id="headingTres" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseTres" aria-expanded="true" aria-controls="collapseTres">
-                            <h3 class="text-uppercase mb-0 c-secundary-cfn">REPRESENTANTE LEGAL</h3>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Apellidos y Nombres">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad">Nacional</option>
-                                            <option value="opcion1">Opcion1</option>
-                                            <option value="opcion2">Opcion2</option>
-                                            <option value="opcion3">Opcion3</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="date">
-                                        <div class="fechaClass p-2 bg-white border">
-                                            <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha de Nacimiento 
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Sexo</option>
-                                            <option value="opcion2">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Estado Civil</option>
-                                            <option value="opcion2">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Separación de Bienes</option>
-                                            <option value="opcion2">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">N° de Carga familiares</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Formación Académica</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-8">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Título">
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Dirección de domicilio">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Provincia</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Parroquia</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Cantón</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Ciudad</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Calle">
-                                    </div>
-                                    <div class="col-sm-12 col-md-2">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N°">
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Tipo de vivienda</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Precio">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Fax">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Celular">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="email" placeholder="E-mail">
-                                    </div>
-                                    <div class="col-sm-12 col-md-12">
-                                        <div class="form-check mb-3">
-                                            <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
-                                            <label class="form-check-label" for="Politicamente-expuesto-PEP">Políticamente expuesto (PEP)</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-8">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Institución">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="opcion1">Cargo</option>
-                                            <option value="opcion2">1</option>
-                                            <option value="opcion2">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-12">
-                                        <div class="form-check mb-3">
-                                            <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
-                                            <label class="form-check-label" for="Politicamente-expuesto-PEP">Persona con Discapacidad</label>
-                                        </div>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Ingresos mensuales">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total de activos">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total pasivos">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total patrimonio">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-3">
-                        <div id="headingCuatro" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="true" aria-controls="collapseCuatro">
-                            <h3 class="text-uppercase mb-0 c-secundary-cfn">Datos del cónyuge</h3>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseCuatro" class="collapse" aria-labelledby="headingCuatro" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre completo">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Nacionalidad</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-4">
-                        <div class="d-flex">
-                            <div id="headingCinco" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="true" aria-controls="collapseCinco">
-                                <h3 class="text-uppercase mb-0 c-secundary-cfn">ESTRUCTURA ACCIONARIA</h3>
-                            </div>
-                            <!-- boton añadir más -->
-                            <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
-                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                            </div>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <input class="btn-sm rounded-pill w-100 mb-2 border mb-3" type="text" placeholder="Nombres completos (Accionistas o Socios  o Figura que aplique al caso)">
-                                <div class="row">
-                                    <!-- fila -->
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="RUC">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Detalle de Relación">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Participación Accionaria">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad">Políticamente expuesto</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Código Dactilar (si aplica)">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Capital Invertido (USD)">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad">Nacionalidad</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad">Cargo desempeñado</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12">
-                                        <strong class="c-primary-cfn text-uppercase">Datos del Cónyuge</strong>
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Apellidos y Nombres">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Nacionalidad</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                Consideraciones: 
-                                            </div>
-                                            <div class="card-body">
-                                                <p>-En caso de que el deudor mantenga otras figuras legales tales como: cooperativas no financieras, asociaciones, fundaciones, federaciones, comunidades, corporaciones, entre otras, establecidas bajo las normas del Código Civil y que se encuentren legalmente reconocidas por la instancia competente, se debe contar con información de los propietarios o la figura que aplique de acuerdo al caso. En el campo “Detalle de Relación” especificar el cargo que ostenta la persona natural especificada.</p>
-                                                <p class="mb-0">-En caso de accionistas (sociedades o fideicomisos) domiciliados en el extranjero, se deberá además registrar a las personas naturales propietarias de las acciones o participaciones junto con el porcentaje que mantienen en el capital de la compañía. En el campo “Detalle de Relación” especificar de quien es socio o accionistas la persona jurídica o persona natural identificada, por ejemplo: Accionista de la compañía ABC S.A.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-5">
-                        <div class="d-flex">
-                            <div id="headingSeis" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="true" aria-controls="collapseSeis">
-                                <h3 class="text-uppercase mb-0 c-secundary-cfn">PRINCIPALES DIRECTIVOS / ADMINISTRADORES</h3>
-                            </div>
-                            <!-- boton añadir más -->
-                            <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
-                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                            </div>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombres Completos">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad">Cargo/Administradores</option>
-                                            <option value="opcion1">Opcion1</option>
-                                            <option value="opcion2">Opcion2</option>
-                                            <option value="opcion3">Opcion3</option>
-                                        </select>
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Antiguedad años">
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad">Representante Legal</option>
-                                            <option value="opcion1">Opcion1</option>
-                                            <option value="opcion2">Opcion2</option>
-                                            <option value="opcion3">Opcion3</option>
-                                        </select>
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad">Nacionalidad</option>
-                                            <option value="opcion1">Opcion1</option>
-                                            <option value="opcion2">Opcion2</option>
-                                            <option value="opcion3">Opcion3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-6">
-                        <div class="d-flex">
-                            <div id="headingQuinto" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseQuinto" aria-expanded="true" aria-controls="collapseQuinto">
-                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                    DETALLE DE EMPRESAS RELACIONADAS
-                                </h3>
-                            </div>
-                            <!-- boton añadir más -->
-                            <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
-                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                            </div>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseQuinto" class="collapse" aria-labelledby="headingQuinto" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Razón Social">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>RUC</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Nacional</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option disabled selected>% de participación</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-7">
-                        <div class="d-flex">
-                            <div id="headingSexto" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseSexto" aria-expanded="true" aria-controls="collapseSexto">
-                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                    PRINCIPALES PROVEEDORES NACIONALES/EXTRANJEROS
-                                </h3>
-                            </div>
-                            <!-- boton añadir más -->
-                            <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
-                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                            </div>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseSexto" class="collapse" aria-labelledby="headingSexto" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre o Razón Social">
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Persona de Contacto">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Provincia/País</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Monto anual compras" pattern="[0-9]{1,}">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option disabled selected>Insumo/Producto</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Año relacion comercial</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option disabled selected>Proveedor es su cliente</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Políticas/Condiciones de compras">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-8">
-                        <div class="d-flex">
-                            <div id="headingSeptimo" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseSeptimo" aria-expanded="true" aria-controls="collapseSeptimo">
-                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                    PRINCIPALES CLIENTES NACIONALES/EXTRANJEROS
-                                </h3>
-                            </div>
-                            <!-- boton añadir más -->
-                            <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
-                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                            </div>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseSeptimo" class="collapse" aria-labelledby="headingSeptimo" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre o Razón Social">
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Persona de Contacto">
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Provincia/País</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Monto anual compras" pattern="[0-9]{1,}">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option disabled selected>Insumo/Producto</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Año relacion comercial</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option disabled selected>Proveedor es su cliente</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <!-- fila -->
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Políticas/Condiciones de compras">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-9">
-                        <div id="headingOctavo" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseOctavo" aria-expanded="true" aria-controls="collapseOctavo">
-                            <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                ESTRATEGIAS DEFINIDAS DE CORTO Y LARGO PLAZO
-                            </h3>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseOctavo" class="collapse" aria-labelledby="headingOctavo" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <textarea class="form-control" placeholder="ESTRATEGÍAS COMERCIALES:" rows="3"></textarea>
-                                                <textarea class="form-control mt-3" placeholder="ESTRATEGÍAS OPERATIVAS:" rows="3"></textarea>
-                                                <textarea class="form-control mt-3" placeholder="ESTRATEGÍAS FINANCIERAS:" rows="3"></textarea>
-                                                <select class="btn-sm rounded-pill w-100 border mt-3">
-                                                    <option value="Nacionalidad" disabled="" selected="">Impacto medio ambiental negativo</option>
-                                                    <option value="opcion1">Opcion1</option>
-                                                </select>
-                                                <textarea class="form-control mt-3" placeholder="EN CASO DE GENERARLO, EXPLIQUE LAS MEDIDAS TOMADAS PARA CONTRARESTAR DICHO IMPACTO, ASI COMO CITE LAS PRINCIPALES POLÍTICAS DE MEDIO AMBIENTE Y RECURSOS HUMANOS ADOPTADAS POR LA EMPRESA." rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-10">
-                        <div id="headingNoveno" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseNoveno" aria-expanded="true" aria-controls="collapseNoveno">
-                            <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                ASPECTOS DE PRODUCCIÓN
-                            </h3>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseNoveno" class="collapse" aria-labelledby="headingNoveno" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="d-inline float-left">
-                                            <h4 class="c-alternativo-1 h5 pb-0 mb-0">(Detallar los 10 productos o servicios más relevantes)</h4>
-                                        </div>
-                                        <div class="pl-2 pr-2 d-flex align-items-center " style="width: 94px;" role="button">
-                                            <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre/Línea de Producto">
-                                    </div>
-                                    <div class="col-sm-12 mb-3">
-                                        <select class="btn-sm rounded-pill w-50 border">
-                                            <option value="Nacionalidad" disabled selected>Principales mercados</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                        <div class="bg-primary-cfn rounded-pill text-white pl-2 pr-2 d-inline-block ml-2" style="line-height: 1.7">
-                                            Alemania <i class="fa fa-times-circle " aria-hidden="true"></i>
-                                        </div>
-                                        <div class="bg-primary-cfn rounded-pill text-white pl-2 pr-2 d-inline-block ml-2" style="line-height: 1.7">
-                                            Francia <i class="fa fa-times-circle " aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Ventas Totales - Local">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Ventas Totales - Export ">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Ventas Totales - Total">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-11">
-                        <div id="headingDiez" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseDiez" aria-expanded="true" aria-controls="collapseDiez">
-                            <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                REFERENCIAS
-                            </h3>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseDiez" class="collapse" aria-labelledby="headingDiez" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="accordion" id="accordionExample">
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseDos" class="collapse" aria-labelledby="headingDos" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
                                             <div class="card">
-                                                <div class="card-header" id="headingOne">
-                                                    <h4 class="mb-0 ">
-                                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                        REFERENCIAS BANCARIAS <i class="text-danger fa fa-plus-circle pl-1"></i>
-                                                    </button>
-                                                    </h4>
+                                                <div class="card-body">
+                                                    <textarea class="form-control" placeholder="Se debe detallar toda la información pertinente acerca del negocio, experiencia en el negocio actual y cambios en línea de negocios." rows="3"></textarea>
                                                 </div>
-                                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                                                    <option value="">Banco</option>
-                                                                    <option value="proyecto2">opcion2</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N° de cuenta">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                                                    <option value="proyecto1">Tipo de cuenta</option>
-                                                                    <option value="proyecto2">opcion2</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-3">
-                                                                <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="date">
-                                                                <div class="fechaClass p-2 bg-white border animate__animated animate__backInRight">
-                                                                    <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha apertura
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-2">
+                            <div id="headingTres" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseTres" aria-expanded="true" aria-controls="collapseTres">
+                                <h3 class="text-uppercase mb-0 c-secundary-cfn">REPRESENTANTE LEGAL</h3>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Apellidos y Nombres">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad">Nacional</option>
+                                                <option value="opcion1">Opcion1</option>
+                                                <option value="opcion2">Opcion2</option>
+                                                <option value="opcion3">Opcion3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="date">
+                                            <div class="fechaClass p-2 bg-white border">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha de Nacimiento 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Sexo</option>
+                                                <option value="opcion2">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Estado Civil</option>
+                                                <option value="opcion2">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Separación de Bienes</option>
+                                                <option value="opcion2">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">N° de Carga familiares</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Formación Académica</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Título">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Dirección de domicilio">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Provincia</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Parroquia</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Cantón</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Ciudad</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Calle">
+                                        </div>
+                                        <div class="col-sm-12 col-md-2">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N°">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Tipo de vivienda</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Precio">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Fax">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Celular">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="email" placeholder="E-mail">
+                                        </div>
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="form-check mb-3">
+                                                <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
+                                                <label class="form-check-label" for="Politicamente-expuesto-PEP">Políticamente expuesto (PEP)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Institución">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="opcion1">Cargo</option>
+                                                <option value="opcion2">1</option>
+                                                <option value="opcion2">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="form-check mb-3">
+                                                <input type="checkbox" class="form-check-input" id="Politicamente-expuesto-PEP">
+                                                <label class="form-check-label" for="Politicamente-expuesto-PEP">Persona con Discapacidad</label>
+                                            </div>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Ingresos mensuales">
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total de activos">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total pasivos">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Total patrimonio">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-3">
+                            <div id="headingCuatro" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="true" aria-controls="collapseCuatro">
+                                <h3 class="text-uppercase mb-0 c-secundary-cfn">Datos del cónyuge</h3>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseCuatro" class="collapse" aria-labelledby="headingCuatro" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre completo">
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Nacionalidad</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-4">
+                            <div class="d-flex">
+                                <div id="headingCinco" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="true" aria-controls="collapseCinco">
+                                    <h3 class="text-uppercase mb-0 c-secundary-cfn">ESTRUCTURA ACCIONARIA</h3>
+                                </div>
+                                <!-- boton añadir más -->
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                </div>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <input class="btn-sm rounded-pill w-100 mb-2 border mb-3" type="text" placeholder="Nombres completos (Accionistas o Socios  o Figura que aplique al caso)">
+                                    <div class="row">
+                                        <!-- fila -->
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="RUC">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Detalle de Relación">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Participación Accionaria">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad">Políticamente expuesto</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Código Dactilar (si aplica)">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Capital Invertido (USD)">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad">Nacionalidad</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad">Cargo desempeñado</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12">
+                                            <strong class="c-primary-cfn text-uppercase">Datos del Cónyuge</strong>
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Apellidos y Nombres">
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Nacionalidad</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Consideraciones: 
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>-En caso de que el deudor mantenga otras figuras legales tales como: cooperativas no financieras, asociaciones, fundaciones, federaciones, comunidades, corporaciones, entre otras, establecidas bajo las normas del Código Civil y que se encuentren legalmente reconocidas por la instancia competente, se debe contar con información de los propietarios o la figura que aplique de acuerdo al caso. En el campo “Detalle de Relación” especificar el cargo que ostenta la persona natural especificada.</p>
+                                                    <p class="mb-0">-En caso de accionistas (sociedades o fideicomisos) domiciliados en el extranjero, se deberá además registrar a las personas naturales propietarias de las acciones o participaciones junto con el porcentaje que mantienen en el capital de la compañía. En el campo “Detalle de Relación” especificar de quien es socio o accionistas la persona jurídica o persona natural identificada, por ejemplo: Accionista de la compañía ABC S.A.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-5">
+                            <div class="d-flex">
+                                <div id="headingSeis" class="btn btn-link btn-block text-left pb-0 pt-0 text-decoration-none mt-3" role="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="true" aria-controls="collapseSeis">
+                                    <h3 class="text-uppercase mb-0 c-secundary-cfn">PRINCIPALES DIRECTIVOS / ADMINISTRADORES</h3>
+                                </div>
+                                <!-- boton añadir más -->
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                </div>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombres Completos">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad">Cargo/Administradores</option>
+                                                <option value="opcion1">Opcion1</option>
+                                                <option value="opcion2">Opcion2</option>
+                                                <option value="opcion3">Opcion3</option>
+                                            </select>
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Antiguedad años">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad">Representante Legal</option>
+                                                <option value="opcion1">Opcion1</option>
+                                                <option value="opcion2">Opcion2</option>
+                                                <option value="opcion3">Opcion3</option>
+                                            </select>
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Cédula">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad">Nacionalidad</option>
+                                                <option value="opcion1">Opcion1</option>
+                                                <option value="opcion2">Opcion2</option>
+                                                <option value="opcion3">Opcion3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-6">
+                            <div class="d-flex">
+                                <div id="headingQuinto" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseQuinto" aria-expanded="true" aria-controls="collapseQuinto">
+                                    <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                        DETALLE DE EMPRESAS RELACIONADAS
+                                    </h3>
+                                </div>
+                                <!-- boton añadir más -->
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                </div>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseQuinto" class="collapse" aria-labelledby="headingQuinto" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Razón Social">
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>RUC</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Nacional</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option disabled selected>% de participación</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-7">
+                            <div class="d-flex">
+                                <div id="headingSexto" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseSexto" aria-expanded="true" aria-controls="collapseSexto">
+                                    <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                        PRINCIPALES PROVEEDORES NACIONALES/EXTRANJEROS
+                                    </h3>
+                                </div>
+                                <!-- boton añadir más -->
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                </div>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseSexto" class="collapse" aria-labelledby="headingSexto" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre o Razón Social">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Persona de Contacto">
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Provincia/País</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Monto anual compras" pattern="[0-9]{1,}">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option disabled selected>Insumo/Producto</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Año relacion comercial</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option disabled selected>Proveedor es su cliente</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Políticas/Condiciones de compras">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-8">
+                            <div class="d-flex">
+                                <div id="headingSeptimo" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseSeptimo" aria-expanded="true" aria-controls="collapseSeptimo">
+                                    <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                        PRINCIPALES CLIENTES NACIONALES/EXTRANJEROS
+                                    </h3>
+                                </div>
+                                <!-- boton añadir más -->
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                </div>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseSeptimo" class="collapse" aria-labelledby="headingSeptimo" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre o Razón Social">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Persona de Contacto">
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Provincia/País</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Monto anual compras" pattern="[0-9]{1,}">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option disabled selected>Insumo/Producto</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Año relacion comercial</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="tel" placeholder="Teléfono">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option disabled selected>Proveedor es su cliente</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <!-- fila -->
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Políticas/Condiciones de compras">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-9">
+                            <div id="headingOctavo" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseOctavo" aria-expanded="true" aria-controls="collapseOctavo">
+                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                    ESTRATEGIAS DEFINIDAS DE CORTO Y LARGO PLAZO
+                                </h3>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseOctavo" class="collapse" aria-labelledby="headingOctavo" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <textarea class="form-control" placeholder="ESTRATEGÍAS COMERCIALES:" rows="3"></textarea>
+                                                    <textarea class="form-control mt-3" placeholder="ESTRATEGÍAS OPERATIVAS:" rows="3"></textarea>
+                                                    <textarea class="form-control mt-3" placeholder="ESTRATEGÍAS FINANCIERAS:" rows="3"></textarea>
+                                                    <select class="btn-sm rounded-pill w-100 border mt-3">
+                                                        <option value="Nacionalidad" disabled="" selected="">Impacto medio ambiental negativo</option>
+                                                        <option value="opcion1">Opcion1</option>
+                                                    </select>
+                                                    <textarea class="form-control mt-3" placeholder="EN CASO DE GENERARLO, EXPLIQUE LAS MEDIDAS TOMADAS PARA CONTRARESTAR DICHO IMPACTO, ASI COMO CITE LAS PRINCIPALES POLÍTICAS DE MEDIO AMBIENTE Y RECURSOS HUMANOS ADOPTADAS POR LA EMPRESA." rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-10">
+                            <div id="headingNoveno" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseNoveno" aria-expanded="true" aria-controls="collapseNoveno">
+                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                    ASPECTOS DE PRODUCCIÓN
+                                </h3>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseNoveno" class="collapse" aria-labelledby="headingNoveno" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="d-inline float-left">
+                                                <h4 class="c-alternativo-1 h5 pb-0 mb-0">(Detallar los 10 productos o servicios más relevantes)</h4>
+                                            </div>
+                                            <div class="pl-2 pr-2 d-flex align-items-center " style="width: 94px;" role="button">
+                                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 mt-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Nombre/Línea de Producto">
+                                        </div>
+                                        <div class="col-sm-12 mb-3">
+                                            <select class="btn-sm rounded-pill w-50 border">
+                                                <option value="Nacionalidad" disabled selected>Principales mercados</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                            <div class="bg-primary-cfn rounded-pill text-white pl-2 pr-2 d-inline-block ml-2" style="line-height: 1.7">
+                                                Alemania <i class="fa fa-times-circle " aria-hidden="true"></i>
+                                            </div>
+                                            <div class="bg-primary-cfn rounded-pill text-white pl-2 pr-2 d-inline-block ml-2" style="line-height: 1.7">
+                                                Francia <i class="fa fa-times-circle " aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Ventas Totales - Local">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Ventas Totales - Export ">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="% Ventas Totales - Total">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-11">
+                            <div id="headingDiez" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseDiez" aria-expanded="true" aria-controls="collapseDiez">
+                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                    REFERENCIAS
+                                </h3>
+                            </div>
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseDiez" class="collapse" aria-labelledby="headingDiez" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h4 class="mb-0 ">
+                                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                            REFERENCIAS BANCARIAS <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                                        </button>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                                        <option value="">Banco</option>
+                                                                        <option value="proyecto2">opcion2</option>
+                                                                    </select>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Saldo Promedio">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Saldo Actual">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                                                    <option value="" disabled="" selected="">Moneda</option>
-                                                                    <option value="proyecto2">opcion2</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-6">
-                                                                <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Número de cifras">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-6">
-                                                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                                                    <option value="" disabled="" selected="">Tipo de Cifras</option>
-                                                                    <option value="proyecto2">opcion2</option>
-                                                                </select>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="N° de cuenta">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                                        <option value="proyecto1">Tipo de cuenta</option>
+                                                                        <option value="proyecto2">opcion2</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-3">
+                                                                    <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="date">
+                                                                    <div class="fechaClass p-2 bg-white border animate__animated animate__backInRight">
+                                                                        <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha apertura
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Saldo Promedio">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Saldo Actual">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                                        <option value="" disabled="" selected="">Moneda</option>
+                                                                        <option value="proyecto2">opcion2</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <input class="fecha btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Número de cifras">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                                        <option value="" disabled="" selected="">Tipo de Cifras</option>
+                                                                        <option value="proyecto2">opcion2</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" id="headingTwo">
-                                                    <h4 class="mb-0 ">
-                                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                                        TARJETAS DE CRÉDITO <i class="text-danger fa fa-plus-circle pl-1"></i>
-                                                    </button>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <div class="col-sm-12 col-md-6">
-                                                                <select class="btn-sm rounded-pill d-inline w-100 mb-2 border mb-3">
-                                                                    <option value="">Banco</option>
-                                                                    <option value="proyecto2">opcion2</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-6">
-                                                                <input class=" btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Emisor">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <input class="btn-sm rounded-pill w-100 border" type="text" placeholder="N° de Tarjeta">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <input class="btn-sm rounded-pill w-100 border " type="text" placeholder="Cupo">
-                                                            </div>
-                                                            <div class="col-sm-12 col-md-4">
-                                                                <input class="fecha btn-sm rounded-pill w-100 border" type="date" lang="es">
-                                                                <div class="fechaClass p-2 bg-white border">
-                                                                    <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha de caducidad dd/mm/aaaa
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h4 class="mb-0 ">
+                                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                                            TARJETAS DE CRÉDITO <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                                        </button>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border mb-3">
+                                                                        <option value="">Banco</option>
+                                                                        <option value="proyecto2">opcion2</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <input class=" btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Emisor">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <input class="btn-sm rounded-pill w-100 border" type="text" placeholder="N° de Tarjeta">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <input class="btn-sm rounded-pill w-100 border " type="text" placeholder="Cupo">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-4">
+                                                                    <input class="fecha btn-sm rounded-pill w-100 border" type="date" lang="es">
+                                                                    <div class="fechaClass p-2 bg-white border">
+                                                                        <i class="fa fa-chevron-right" aria-hidden="true"></i> Fecha de caducidad dd/mm/aaaa
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -933,100 +941,101 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-12">
-                        <div class="d-flex">
-                            <div id="headingOnce" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseOnce" aria-expanded="true" aria-controls="collapseOnce">
-                                <h3 class="text-uppercase mb-0 c-secundary-cfn">
-                                    PROPIEDADES
-                                </h3>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-12">
+                            <div class="d-flex">
+                                <div id="headingOnce" class="btn btn-link btn-block text-left pb-0 pt-0 mt-3 text-decoration-none" role="button" data-toggle="collapse" data-target="#collapseOnce" aria-expanded="true" aria-controls="collapseOnce">
+                                    <h3 class="text-uppercase mb-0 c-secundary-cfn">
+                                        PROPIEDADES
+                                    </h3>
+                                </div>
+                                <!-- boton añadir más -->
+                                <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
+                                    <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
+                                </div>
                             </div>
-                            <!-- boton añadir más -->
-                            <div class="ml-auto p-2 d-flex align-items-center" style="width: 94px;" role="button">
-                                <samp class="f-a-roman">Añadir</samp> <i class="text-danger fa fa-plus-circle pl-1"></i>
-                            </div>
-                        </div>
-                        <hr class="mb-0 mt-0">
-                        <div id="collapseOnce" class="collapse" aria-labelledby="headingOnce" data-parent="#Datos-de-Deudor">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-6">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option value="Nacionalidad" disabled selected>Tipo de bien</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Valor Comercial">
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Ubicación">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Metros Cuadrados">
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option disabled selected>Prendado</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <select class="btn-sm rounded-pill w-100 border mb-3">
-                                            <option disabled selected>Hipoteca</option>
-                                            <option value="opcion1">Opcion1</option>
-                                        </select>
-                                    </div>
-                                    <hr class="w-100">
-                                    <div class="col-sm-12">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Vehículos/ maquinarias/ equipos">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Marca">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Tipo">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Año">
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Prendado">
+                            <hr class="mb-0 mt-0">
+                            <div id="collapseOnce" class="collapse" aria-labelledby="headingOnce" data-parent="#Datos-de-Deudor">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option value="Nacionalidad" disabled selected>Tipo de bien</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Valor Comercial">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Ubicación">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Metros Cuadrados">
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option disabled selected>Prendado</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <select class="btn-sm rounded-pill w-100 border mb-3">
+                                                <option disabled selected>Hipoteca</option>
+                                                <option value="opcion1">Opcion1</option>
+                                            </select>
+                                        </div>
+                                        <hr class="w-100">
+                                        <div class="col-sm-12">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Vehículos/ maquinarias/ equipos">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Marca">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Tipo">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Año">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3">
+                                            <input class="btn-sm rounded-pill w-100 border mb-3" type="text" placeholder="Prendado">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container bg-white animate__animated animate__fadeInRight delay-12">
-                        <div class="w-100" style="height: 50px;"></div>
-                        <div class="row mb-2 text-center d-flex justify-content-center align-items-center">
-                            <input class="pl-1 pr-1 pb-2 pt-2 w-25 text-center bg-primary-cfn text-white border-0" type="button" value="DECLARACIÓN"> <span class="ml-2 bg-primary-cfn rounded-circle d-flex justify-content-center align-items-center" style="width: 30px;height:30px;"><i class="fa fa-file text-white" aria-hidden="true"></i></span>
+                        <div class="container animate__animated animate__fadeInRight delay-12">
+                            <div class="w-100" style="height: 50px;"></div>
+                            <div class="row mb-2 text-center d-flex justify-content-center align-items-center">
+                                <input class="pl-1 pr-1 pb-2 pt-2 w-25 text-center bg-primary-cfn text-white border-0" type="button" value="DECLARACIÓN"> <span class="ml-2 bg-primary-cfn rounded-circle d-flex justify-content-center align-items-center" style="width: 30px;height:30px;"><i class="fa fa-file text-white" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="row mb-2 d-flex justify-content-center">
+                                <input id="guardar-Datos_de_solicitud" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white mr-2 border-0" type="submit" value="Guardar">
+                                <a id="irA-Datos-de-Deudor" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white ml-2 border-0" href="#Datos-de-Deudor">Continuar</a>
+                            </div>
+                            <div class="w-100" style="height: 100px;"></div>
                         </div>
-                        <div class="row mb-2 d-flex justify-content-center">
-                            <input id="guardar-Datos_de_solicitud" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white mr-2 border-0" type="submit" value="Guardar">
-                            <a id="irA-Datos-de-Deudor" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white ml-2 border-0" href="#Datos-de-Deudor">Continuar</a>
-                        </div>
-                        <div class="w-100" style="height: 100px;"></div>
-                    </div>
-                </form>
-            </div>
-            <div id="Datos-de-Garante" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Datos-de-Garante">
-                <h2 class="text-center">
-                    Tres
-                </h2>
-            </div>
-            <div id="Confirmacion" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Confirmacion">
-                <h2 class="text-center">
-                    Cuatro
-                </h2>
-            </div>
-            <div id="Impresion" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Impresion">
-                <h2 class="text-center">
-                    Cinco
-                </h2>
+                    </form>
+                </div>
+                <div id="Datos-de-Garante" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Datos-de-Garante">
+                    <h2 class="text-center">
+                        Tres
+                    </h2>
+                </div>
+                <div id="Confirmacion" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Confirmacion">
+                    <h2 class="text-center">
+                        Cuatro
+                    </h2>
+                </div>
+                <div id="Impresion" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-Impresion">
+                    <h2 class="text-center">
+                        Cinco
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
+    
     <footer class="text-center bg-alternativo p-2 mt-5"> <!-- iconos del footer -->
 		<div class="container">
 			<p class="sinEspaciosUpDown text-center mb-0 ">SOPORTA NAVEGADORES</p>

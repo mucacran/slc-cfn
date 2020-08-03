@@ -72,314 +72,310 @@
             </nav>
             <div class="bg-white tab-content rounded-bottom p-3" id="myTabContent">
                 <div class="tab-pane fade show active" id="datos-solicitud" role="tabpanel" aria-labelledby="nav-solicitud-tab">
-                    <select class="btn-sm rounded-pill d-inline w-50 mb-2 border mt-2" name="tipo-de-proyecto" id="tipo_de_proyecto">
-                        <option value="proyecto1">Tipo de proyecto</option>
-                        <option value="proyecto1">opcion2</option>
-                        <option value="proyecto1">opcion3</option>
-                    </select>
-                    <h3 class="mb-0" id="dddeudor">
-                        <button class="mt-4 c-secundary-cfn mb-0 text-uppercase text-left border-0 w-100 bg-transparent" type="button" data-toggle="collapse" data-target="#dddeudorUno" aria-expanded="true" aria-controls="dddeudorUno">
-                            Datos del deudor
-                        </button>
-                    </h3>
-                    <hr class="mt-0 mb-0">
-                    <div id="dddeudorUno" class="collapse" aria-labelledby="dddeudor" data-parent="#datos-solicitud">
-                        <div class="card-body">
-                            <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Nombre completo">
-                            <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Cédula">
-                        </div>
-                    </div>
-                    <div id="Datos-financiamiento">
-                        <div id="ddFinanciamiento" class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#ddf2" aria-expanded="true" aria-controls="ddf2">
-                            Datos del financiamiento
-                        </div>
-                        <hr class="mt-0 mb-0">
-                        <div id="ddf2" class="collapse" aria-labelledby="ddFinanciamiento" data-parent="#datos-solicitud">
-                            <div class="row mt-3">
-                                <div class="col-md-3 col-sm-12">
-                                    <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="Escriba">
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="Monto">
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="plazo de días">
-                                </div>
-                                <div class="col-md-3 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
-                                        <option value="valor1" disabled>forma de pago</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <h4 class="mt-4 c-secundary-cfn mb-0 h5">CATÁLOGO DE PRODUCTOS: <span class="">Seleccione los productos a solicitar</span></h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
-                                        <option value="valor1">Capital de trabajo</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
-                                        <option value="valor1">Activo fíjo</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
-                                        <option value="valor1">Apoyo productivo</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="bg-primary-cfn rounded-pill text-white p-2 d-inline-block" >Crédito directo <i class="fa fa-times-circle " aria-hidden="true"></i></div>
-                            <div class="bg-primary-cfn rounded-pill text-white p-2 d-inline-block" >CFN Construye <i class="fa fa-times-circle " aria-hidden="true"></i></div>
-                            <div class="row">
-                                <div class="col-sm-12 ">
-                                    <h4 class="mt-4 c-secundary-cfn mb-0 h5  d-inline-block mr-2">DETALLE DE CONDICIONES </h4><div id="anadirDestino" class="mt-4 ml-auto d-inline-block ml-2"> Añadir destino <i class="text-danger fa fa-plus-circle"></i></div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
-                                        <option value="valor1">Destino</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Descripción">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col clearfix">
-                                    <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
-                                        <option value="valor1">Monto de exportación</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                    <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
-                                        <option value="valor1">Plazo de díaz</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                    <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
-                                        <option value="valor1">Gracia total</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                    <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
-                                        <option value="valor1">Gracia parcial</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                    <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
-                                        <option value="valor1">Formas de pago</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div id="anadirMonto" class="mt-4 ml-auto d-inline-block ml-auto"> Añadir Monto <i class="text-danger fa fa-plus-circle"></i></div>
-                            </div>
-                            <hr>
-                            <select class="btn-sm rounded-pill border">
-                                <option value="valor1">destino</option>
-                                <option value="valor2">valor2</option>
-                                <option value="valor3">valor3</option>
+                    <form action="#">
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight">
+                            <div class="col-5">
+                                <select class="browser-default custom-select rounded-pill mb-2 mt-2" name="tipo-de-proyecto" id="tipo_de_proyecto">
+                                <option value="proyecto1" disabled selected>Tipo de proyecto</option>
+                                <option value="proyecto1">opcion2</option>
                             </select>
+                            </div>
                         </div>
-                    </div>
-                    <div id="datos-garantia">
-                        <div id="cabeceraddidp" class="d-flex">
-                            <div class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#ddip" aria-expanded="true" aria-controls="ddip">
-                                Detalle de inversiones del Proyecto
-                            </div>
-                            <div id="anadirDG" class="mt-4 d-inline ml-auto ">
-                                Añadir nuevo destino <i class="text-danger fa fa-plus-circle"></i>
-                            </div>
-                        </div>    
-                        <hr class="mt-0 mb-0">
-                        <div id="ddip" class="collapse" aria-labelledby="cabeceraddidp" data-parent="#datos-solicitud">
-                            <div class="row pt-3">
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                        <option value="valor1">Destino</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                        <option value="valor1">CFN Medio Ambiente</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
+                        <div class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-1">
+                            <h3 class="mb-0" id="dddeudor">
+                                <button class="mt-4 c-secundary-cfn mb-0 text-uppercase text-left border-0 w-100 bg-transparent" type="button" data-toggle="collapse" data-target="#dddeudorUno" aria-expanded="true" aria-controls="dddeudorUno">
+                                    Datos del deudor
+                                </button>
+                            </h3>
+                            <hr class="mt-0 mb-0">
+                            <div id="dddeudorUno" class="collapse" aria-labelledby="dddeudor" data-parent="#datos-solicitud">
+                                <div class="card-body">
+                                    <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Nombre completo">
+                                    <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Cédula">
                                 </div>
                             </div>
-                            <table class="table">
-                                <tr>
-                                    <td class="text-right">
-                                        <span >
-                                            Aporte CFN
-                                        </span>
-                                    </td>
-                                    <td>
+                        </div>
+                        <div id="Datos-financiamiento" class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-2">
+                            <div id="ddFinanciamiento" class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#ddf2" aria-expanded="true" aria-controls="ddf2">
+                                Datos del financiamiento
+                            </div>
+                            <hr class="mt-0 mb-0">
+                            <div id="ddf2" class="collapse" aria-labelledby="ddFinanciamiento" data-parent="#datos-solicitud">
+                                <div class="row mt-3">
+                                    <div class="col-md-3 col-sm-12">
+                                        <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="Escriba">
+                                    </div>
+                                    <div class="col-md-3 col-sm-12">
+                                        <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="Monto">
+                                    </div>
+                                    <div class="col-md-3 col-sm-12">
+                                        <input class="btn-sm rounded-pill d-inline w-100 mb-2 border" type="text" placeholder="plazo de días">
+                                    </div>
+                                    <div class="col-md-3 col-sm-12">
+                                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
+                                            <option value="valor1" disabled>forma de pago</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="mt-4 c-secundary-cfn mb-0 h5">CATÁLOGO DE PRODUCTOS: <span class="">Seleccione los productos a solicitar</span></h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
+                                            <option value="valor1">Capital de trabajo</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
+                                            <option value="valor1">Activo fíjo</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
+                                            <option value="valor1">Apoyo productivo</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bg-primary-cfn rounded-pill text-white p-2 d-inline-block" >Crédito directo <i class="fa fa-times-circle " aria-hidden="true"></i></div>
+                                <div class="bg-primary-cfn rounded-pill text-white p-2 d-inline-block" >CFN Construye <i class="fa fa-times-circle " aria-hidden="true"></i></div>
+                                <div class="row">
+                                    <div class="col-sm-12 ">
+                                        <h4 class="mt-4 c-secundary-cfn mb-0 h5  d-inline-block mr-2">DETALLE DE CONDICIONES </h4><div id="anadirDestino" class="mt-4 ml-auto d-inline-block ml-2"> Añadir destino <i class="text-danger fa fa-plus-circle"></i></div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border" >
+                                            <option value="valor1">Destino</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Descripción">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col clearfix">
+                                        <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
+                                            <option value="valor1">Monto de exportación</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                        <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
+                                            <option value="valor1">Plazo de díaz</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                        <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
+                                            <option value="valor1">Gracia total</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                        <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
+                                            <option value="valor1">Gracia parcial</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                        <select class="float-left btn-sm rounded-pill d-block mr-2 mb-2 border">
+                                            <option value="valor1">Formas de pago</option>
+                                            <option value="valor2">Valor2</option>
+                                            <option value="valor3">Valor3</option>
+                                            <option value="valor4">Valor4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div id="anadirMonto" class="mt-4 ml-auto d-inline-block ml-auto"> Añadir Monto <i class="text-danger fa fa-plus-circle"></i></div>
+                                </div>
+                                <hr>
+                                <select class="btn-sm rounded-pill border">
+                                    <option value="valor1">destino</option>
+                                    <option value="valor2">valor2</option>
+                                    <option value="valor3">valor3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="datos-garantia" class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-3">
+                            <div id="cabeceraddidp" class="d-flex">
+                                <div class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#ddip" aria-expanded="true" aria-controls="ddip">
+                                    Detalle de inversiones del Proyecto
+                                </div>
+                                <div id="anadirDG" class="mt-4 d-inline ml-auto ">
+                                    Añadir nuevo destino <i class="text-danger fa fa-plus-circle"></i>
+                                </div>
+                            </div>    
+                            <hr class="mt-0 mb-0">
+                            <div id="ddip" class="collapse" aria-labelledby="cabeceraddidp" data-parent="#datos-solicitud">
+                                <div class="row pt-3">
+                                    <div class="col-md-4 col-sm-12">
                                         <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                            <option value="valor1">Monto</option>
+                                            <option value="valor1" disabled selected>Destino</option>
                                             <option value="valor2">Valor2</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
                                         <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                            <option value="valor1">Porcentaje</option>
+                                            <option value="valor1" disabled selected>CFN Medio Ambiente</option>
                                             <option value="valor2">Valor2</option>
                                         </select>
-                                    </td>
-                                    <td>
-                                        <input class="" type="text" placeholder="Descripcion">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-right">
-                                        <span >
-                                            Aporte Clientes
-                                        </span>
-                                    </td>
-                                    <td>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <tr>
+                                        <td class="text-right">
+                                            <span >
+                                                Aporte CFN
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                <option value="valor1" disabled selected>Monto</option>
+                                                <option value="valor2">Valor2</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                <option value="valor1" disabled selected>Porcentaje</option>
+                                                <option value="valor2">Valor2</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input class="" type="text" placeholder="Descripcion">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">
+                                            <span >
+                                                Aporte Clientes
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                <option value="valor1" disabled selected>Monto</option>
+                                                <option value="valor2">Valor2</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                                <option value="valor1" disabled selected>Porcentaje</option>
+                                                <option value="valor2">Valor2</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input class="" type="text" placeholder="Descripcion">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id="anadiendoDG1" class="h-auto d-block"></div>
+                            </div>
+                        </div>
+                        <div id="recursos-humanos" class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-4">
+                            <div class="d-flex">
+                                <div id="recursos-humanos4" class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#rh4" aria-expanded="true" aria-controls="rh4">
+                                    Recursos humanos
+                                </div>
+                                <div id="anadirRH" class="mt-4 d-inline ml-auto ">
+                                    Añadir <i class="text-danger fa fa-plus-circle"></i>
+                                </div>
+                            </div>    
+                            <hr class="mt-0 mb-0">
+                            <div id="rh4" class="collapse" aria-labelledby="recursos-humanos4" data-parent="#datos-solicitud">
+                                <div class="row pt-3">
+                                    <div class="col-md-4 col-sm-12">
                                         <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                            <option value="valor1">Monto</option>
+                                            <option value="valor1" disabled selected>Tipo de vinculacion</option>
                                             <option value="valor2">Valor2</option>
                                         </select>
-                                    </td>
-                                    <td>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Empleo">
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="N. Empleados después de desembolso CFN">
+                                    </div>
+                                </div>
+                                <textarea class="d-block w-100 rounded border p-3 " cols="30" rows="5" placeholder="Detalle de empleados generados por cada desembolso"></textarea>
+                                <div id="anadiendoRH" class="h-auto d-block"></div>
+                            </div>
+                        </div>
+                        <div id="datos-garantia-5" class="card border-0 rounded-0 animate__animated animate__fadeInRight delay-5">
+                            <div class="d-flex">
+                                <div id="ddgH" class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#ddg" aria-expanded="true" aria-controls="ddg">
+                                    Datos de garantía
+                                </div>
+                                <div id="anadirDG1" class="mt-4 d-inline ml-auto ">Añadir <i class="text-danger fa fa-plus-circle"></i></div>
+                            </div>    
+                            <hr class="mt-0 mb-0">
+                            <div id="ddg" class="collapse" aria-labelledby="ddgH" data-parent="#datos-solicitud">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
                                         <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                            <option value="valor1">Porcentaje</option>
+                                            <option value="valor1" disabled selected>Tipo de garantía</option>
                                             <option value="valor2">Valor2</option>
                                         </select>
-                                    </td>
-                                    <td>
-                                        <input class="" type="text" placeholder="Descripcion">
-                                    </td>
-                                </tr>
-                            </table>
-                            <div id="anadiendoDG1" class="h-auto d-block"></div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                            <option value="valor1" disabled selected>Asegurada</option>
+                                            <option value="valor2">Valor2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
+                                            <option value="valor1" disabled selected>Propio</option>
+                                            <option value="valor2">Valor2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Valor realización/Oportunidad">
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Descripción">
+                                <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Ubicación">
+                                <div id="anadiendoDG" class="h-auto d-block"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="recursos-humanos">
-                        <div class="d-flex">
-                            <div id="recursos-humanos4" class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#rh4" aria-expanded="true" aria-controls="rh4">
-                                Recursos humanos
+                        <div class="container animate__animated animate__fadeInRight delay-6">
+                            <div class="w-100" style="height: 50px;"></div>
+                            <div class="row mb-2 text-center d-flex justify-content-center align-items-center">
+                                <input class="pl-1 pr-1 pb-2 pt-2 w-25 text-center bg-primary-cfn text-white border-0" type="button" value="DECLARACIÓN"> <span class="ml-2 bg-primary-cfn rounded-circle d-flex justify-content-center align-items-center" style="width: 30px;height:30px;"><i class="fa fa-file text-white" aria-hidden="true"></i></span>
                             </div>
-                            <div id="anadirRH" class="mt-4 d-inline ml-auto ">
-                                Añadir <i class="text-danger fa fa-plus-circle"></i>
+                            <div class="row mb-2 d-flex justify-content-center">
+                                <input id="guardar-Datos_de_solicitud" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white mr-2 border-0" type="submit" value="Guardar">
+                                <a id="irA-Datos-de-Deudor" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white ml-2 border-0" href="#Datos-de-Garante">Continuar</a>
                             </div>
-                        </div>    
-                        <hr class="mt-0 mb-0">
-                        <div id="rh4" class="collapse" aria-labelledby="recursos-humanos4" data-parent="#datos-solicitud">
-                            <div class="row pt-3">
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                        <option value="valor1" disabled>Tipo de vinculacion</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Empleo">
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="N. Empleados después de desembolso CFN">
-                                </div>
-                            </div>
-                            <textarea class="d-block w-100 rounded border p-3 " cols="30" rows="5" placeholder="Detalle de empleados generados por cada desembolso"></textarea>
-                            <div id="anadiendoRH" class="h-auto d-block"></div>
+                            <div class="w-100" style="height: 100px;"></div>
                         </div>
-                    </div>
-                    <div id="datos-garantia-5">
-                        <div class="d-flex">
-                            <div id="ddgH" class="mt-4 c-secundary-cfn mb-0 text-uppercase h3" role="button" data-toggle="collapse" data-target="#ddg" aria-expanded="true" aria-controls="ddg">
-                                Datos de garantía
-                            </div>
-                            <div id="anadirDG1" class="mt-4 d-inline ml-auto ">Añadir <i class="text-danger fa fa-plus-circle"></i></div>
-                        </div>    
-                        <hr class="mt-0 mb-0">
-                        <div id="ddg" class="collapse" aria-labelledby="ddgH" data-parent="#datos-solicitud">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                        <option value="valor1">Tipo de garantía</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                        <option value="valor1">Asegurada</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <select class="btn-sm rounded-pill d-inline w-100 mb-2 border">
-                                        <option value="valor1">Propio</option>
-                                        <option value="valor2">Valor2</option>
-                                        <option value="valor3">Valor3</option>
-                                        <option value="valor4">Valor4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Valor realización/Oportunidad">
-                            <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Descripción">
-                            <input class="btn-sm rounded-pill d-block w-100 mb-2 border" type="text" placeholder="Ubicación">
-                            <div id="anadiendoDG" class="h-auto d-block"></div>
-                        </div>
-                    </div>
-
-                    <div class="w-100" style="height: 50px;"></div>
-                    <div class="row mb-2 text-center d-flex justify-content-center align-items-center">
-                        <a href="#" class="pl-1 pr-1 pb-2 pt-2 w-25 text-center  bg-primary-cfn text-white ">DECLARACIÓN</a> <span class="ml-2 bg-primary-cfn rounded-circle d-flex justify-content-center align-items-center" style="width: 30px;height:30px;"><i class="fa fa-file text-white" aria-hidden="true"></i></span>
-                    </div>
-                    <div class="row mb-2 d-flex justify-content-center">
-                        <a href="#" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white mr-2">Guardar</a>
-                        <a href="#" class="pl-2 pr-2 pb-2 pt-2 w-25 text-center bg-alternativo text-white ml-2">Continuar</a>
-                    </div>
-                    <div class="w-100" style="height: 100px;"></div>
+                    </form>
                 </div>
                 <div class="tab-pane fade" id="nav-deudor" role="tabpanel" aria-labelledby="nav-deudor-tab">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                    DOS
                 </div>
                 <div class=" tab-pane fade" id="nav-garante" role="tabpanel" aria-labelledby="nav-garante-tab">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta exercitationem repellendus doloremque delectus eum vel officiis nihil, est fuga consectetur minus dolore libero quas numquam a dolorum in quam. Temporibus.
+                    TRES
                 </div>
                 <div class=" tab-pane fade" id="nav-confirmacion" role="tabpanel" aria-labelledby="nav-confirmacion-tab">
-                    texto 1
+                    CUATRO
                 </div>
                 <div class="tab-pane fade" id="nav-impresion" role="tabpanel" aria-labelledby="nav-impresion-tab">
-                    tecto
+                    CINCO
                 </div>
             </div>
         </div>
