@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-8 col-sm-12  d-flex justify-content-center flex-column"> <!--align-items-center -->
                     <div class="logo mb-3"> <img src="img/logoW.svg" alt="cfn"></div>
-                    <h1 class="display-2 pequenas w-75">SOLICITUD DE CRÉDITO<br><span class="c-secundary-cfn h2 d-block p-natural">Persona Jurídica</span></h1>
+                    <h1 class="display-2 pequenas w-75 m-0" style="line-height:85px">SOLICITUD DE CRÉDITO<br><span class="c-secundary-cfn h2 d-inline-block bg-white w-auto p-2 m-0">Persona Jurídica</span></h1>
                 </div>
                 <div class="col-md-4 col-sm-12 ">
                     <div class="text-center mb-3">
@@ -72,11 +72,13 @@
                                     Sólo emails
                                 </div>
                             </div>
-                            <div class="col-6 mb-3">
-                                <input type="text" class="form-control"  placeholder="CAPTCHA" >
+                            <div class="col-6 mb-3 d-flex justify-content-end">
+                                <div class="bg-white rounded overflow-hidden" style="width: 140px;height: 38px;">
+                                    <img src="img/captchaWEB.png" alt="">
+                                </div>
                             </div>
                             <div class="col-6 mb-3">
-                                <button class="btn btn-block btn-primary bg-alternativo form-control border-0" type="button">Refrescar</button>
+                                <button class="btn btn-md text-white bg-alternativo" style="width: 140px;"><i class="fas fa-sync-alt"></i> REFRESCAR</button>
                             </div>
                             <div class="col-12 mb-3">
                                 <input type="text" class="form-control bg-transparent text-white" placeholder="Texto de la imagen" required pattern="[a-z,A-Z,0-9]{6}">
@@ -106,14 +108,15 @@
             <div class="modal-body">
                 <form>
                     <div class="form-row">
+                        <i class="fa fa-question-circle"></i><img id="imagenCedula" src="img/cedula-codigo-dactilar.png">
                         <div class="col-12 mb-3">
-                            <input id="cedula-ruc" type="text" class="form-control bg-transparent text-white" placeholder="Código dactilar" required pattern="[0-9]{10,13}" >
+                            <input id="cedula-ruc" type="text" class="form-control bg-transparent shadow-none" placeholder="Código dactilar" required pattern="[0-9]{10,13}" >
                         </div>
                         <div class="col-12 mb-3">
-                            <input type="text" class="form-control bg-transparent text-white" placeholder="Fecha de expedición" required pattern="[a-z,A-Z,0-9]{6}">
+                            <input type="text" class="form-control bg-transparent shadow-none" placeholder="Fecha de expedición" required pattern="[a-z,A-Z,0-9]{6}">
                         </div>
                         <div class="col-12 mb-3">
-                            <input type="email" class="form-control bg-transparent text-white" placeholder="Código de verificación" required>
+                            <input type="email" class="form-control bg-transparent shadow-none" placeholder="Código de verificación" required>
                         </div>
                     </div>
                     <button class="btn btn-lg btn-block btn-primary bg-alternativo border-0" type="button" >CONTINUAR</button>

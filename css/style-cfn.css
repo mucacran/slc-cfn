@@ -225,3 +225,13 @@ button:focus{
 {
     border-bottom: 2px solid #178CD0;
 }
+/*********************PARA QUE SE VEA LA IMAGEN DE CODIGO DACTILAR**************************/
+#imagenCedula{
+    width: 5px;
+    transition: all 0.5s;
+}
+.fa.fa-question-circle:hover + #imagenCedula{
+    width: 150px;
+    transition: all 0.5s;
+}
+/***************************************************/
